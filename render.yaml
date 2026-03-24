@@ -1,0 +1,29 @@
+# Render Web Service Configuration
+
+name: pointmarketlb  
+service: web  
+
+env: node  
+
+buildCommand: npm install  
+
+startCommand: npm start  
+
+envVars:  
+  NODE_ENV: production  
+
+plan: starter  
+
+region: oregon  
+
+cpu: 1  
+
+memory: 512MB  
+
+minInstances: 1  
+maxInstances: 1  
+
+routes:  
+  - type: static  
+    path: /static  
+    directory: ./public/static  
