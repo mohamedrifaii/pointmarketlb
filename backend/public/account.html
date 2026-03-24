@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | PointMarketLB Customer Profile</title>
+  <meta name="description" content="View your PointMarketLB customer details and shopping profile for smoother online ordering and delivery in Lebanon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="shell" id="accountPage">
+    <header class="site-header glass-nav">
+      <div class="site-header__inner">
+        <a class="site-header__brand brand-font" href="/">Point Market LB</a>
+        <nav class="site-header__nav">
+          <a class="site-header__link" data-nav="home" href="/">Home</a>
+          <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+          <a class="site-header__link" data-nav="mobiles" href="/mobiles">Mobiles</a>
+          <a class="site-header__link" data-nav="tvs" href="/tvs">TVs</a>
+          <a class="site-header__link" data-nav="audio" href="/audio">Audio</a>
+          <a class="site-header__link" data-nav="gaming" href="/gaming">Gaming</a>
+          <a class="site-header__link" data-nav="wiring" href="/wiring">Wiring</a>
+          <a class="site-header__link" data-nav="electronics" href="/electronics">Electronics</a>
+          <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        </nav>
+        <div class="site-header__actions">
+          <form class="site-header__search" data-store-search>
+            <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+            <input type="text" name="search" placeholder="Search tech...">
+          </form>
+          <a aria-label="Login" class="site-header__icon" href="/login" data-auth-link="guest"><span class="material-symbols-outlined">person</span></a>
+          <a aria-label="Account" class="site-header__icon hidden" href="/account" data-auth-link="member"><span class="material-symbols-outlined">person</span></a>
+          <a aria-label="Go to checkout" class="site-header__icon" href="/checkout"><span class="material-symbols-outlined">shopping_cart</span><span class="site-header__badge" data-cart-count>0</span></a>
+        </div>
+      </div>
+      <nav class="site-header__mobile-nav">
+        <a class="site-header__link" data-nav="home" href="/">Home</a>
+        <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+        <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="checkout" href="/checkout">Checkout</a>
+      </nav>
+    </header>
+
+    <section class="account-panel">
+      <div class="section-head">
+        <div><p class="eyebrow">Signed in</p><h2 class="section-title">Your shopping account</h2></div>
+        <span class="pill" id="accountRole"></span>
+      </div>
+
+      <div class="profile-grid">
+        <article class="card"><p class="eyebrow">Name</p><strong id="accountName"></strong></article>
+        <article class="card"><p class="eyebrow">Email</p><strong id="accountEmail"></strong></article>
+        <article class="card"><p class="eyebrow">Phone</p><strong id="accountPhone"></strong></article>
+        <article class="card"><p class="eyebrow">Birthday</p><strong id="accountBirthday"></strong></article>
+        <article class="card"><p class="eyebrow">Address</p><strong id="accountAddress"></strong></article>
+        <article class="card"><p class="eyebrow">Last login</p><strong id="accountLastLogin"></strong></article>
+      </div>
+
+      <div class="card" style="margin-top: 18px;">
+        <p class="eyebrow">Account status</p>
+        <h3 class="card-title" id="accountStatus"></h3>
+        <div class="actions-row" style="margin-top: 18px;">
+          <button class="button-alt" id="logoutButton" type="button">Log out</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="store-footer surface">
+      <div class="store-footer-grid">
+        <div>
+          <h3>Point Market LB</h3>
+          <p>Return to your basket, keep shopping, and stay ready for checkout and delivery.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="/products">All Products</a>
+          <a href="/cart">Basket</a>
+          <a href="/about">About Us</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="/about">Delivery Info</a>
+          <a href="/about">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="520" rx="36" fill="url(#bg)"/>
+  <circle cx="1328" cy="146" r="180" fill="#FFFFFF" opacity="0.18"/>
+  <rect x="76" y="76" width="194" height="52" rx="26" fill="#F1F7FF"/>
+  <text x="112" y="110" fill="#476684" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">NEW ARRIVALS</text>
+  <text x="74" y="196" fill="#213449" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="800">Fresh Picks for</text>
+  <text x="74" y="272" fill="#213449" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="800">Your Daily Basket</text>
+  <text x="74" y="344" fill="#576B80" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Discover the latest gadgets, home items, and lifestyle finds.</text>
+  <rect x="76" y="390" width="238" height="62" rx="18" fill="#3D82D3"/>
+  <text x="124" y="431" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">See new items</text>
+  <g opacity="0.98">
+    <rect x="980" y="84" width="196" height="328" rx="36" fill="#E8F3FF"/>
+    <rect x="998" y="106" width="160" height="284" rx="28" fill="#FDFEFF"/>
+    <rect x="1020" y="138" width="116" height="176" rx="20" fill="url(#p1)"/>
+    <circle cx="1078" cy="348" r="18" fill="#D8EAFD"/>
+  </g>
+  <g opacity="0.98">
+    <rect x="1190" y="112" width="230" height="268" rx="34" fill="#D6E9FC"/>
+    <rect x="1220" y="144" width="170" height="120" rx="24" fill="url(#p2)"/>
+    <rect x="1220" y="290" width="116" height="18" rx="9" fill="#8DB7E8"/>
+    <rect x="1220" y="322" width="146" height="18" rx="9" fill="#B3D0EF"/>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="74" y1="38" x2="1548" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#DCEBFA"/>
+    </linearGradient>
+    <linearGradient id="p1" x1="1020" y1="138" x2="1136" y2="314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4E84"/>
+      <stop offset="1" stop-color="#4F96E7"/>
+    </linearGradient>
+    <linearGradient id="p2" x1="1220" y1="144" x2="1390" y2="264" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EA0EA"/>
+      <stop offset="1" stop-color="#1A487C"/>
+    </linearGradient>
+  </defs>
+</svg>

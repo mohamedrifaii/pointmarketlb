@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About PointMarketLB | Lebanese Online Shopping Platform</title>
+  <meta name="description" content="Learn about PointMarketLB, a Lebanese online shopping website focused on easy product discovery, smooth basket flow, and delivery-ready e-commerce experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header glass-nav">
+      <div class="site-header__inner">
+        <a class="site-header__brand brand-font" href="/">Point Market LB</a>
+        <nav class="site-header__nav">
+          <a class="site-header__link" data-nav="home" href="/">Home</a>
+          <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+          <a class="site-header__link" data-nav="mobiles" href="/mobiles">Mobiles</a>
+          <a class="site-header__link" data-nav="tvs" href="/tvs">TVs</a>
+          <a class="site-header__link" data-nav="audio" href="/audio">Audio</a>
+          <a class="site-header__link" data-nav="gaming" href="/gaming">Gaming</a>
+          <a class="site-header__link" data-nav="wiring" href="/wiring">Wiring</a>
+          <a class="site-header__link" data-nav="electronics" href="/electronics">Electronics</a>
+          <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        </nav>
+        <div class="site-header__actions">
+          <form class="site-header__search" data-store-search>
+            <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+            <input type="text" name="search" placeholder="Search tech...">
+          </form>
+          <a aria-label="Login" class="site-header__icon" href="/login" data-auth-link="guest"><span class="material-symbols-outlined">person</span></a>
+          <a aria-label="Account" class="site-header__icon hidden" href="/account" data-auth-link="member"><span class="material-symbols-outlined">person</span></a>
+          <a aria-label="Go to checkout" class="site-header__icon" href="/checkout"><span class="material-symbols-outlined">shopping_cart</span><span class="site-header__badge" data-cart-count>0</span></a>
+        </div>
+      </div>
+      <nav class="site-header__mobile-nav">
+        <a class="site-header__link" data-nav="home" href="/">Home</a>
+        <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+        <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="checkout" href="/checkout">Checkout</a>
+      </nav>
+    </header>
+
+    <section class="surface">
+      <p class="eyebrow">About PointMarketLB</p>
+      <h2 class="section-title">A Lebanese online market built to make shopping easier, faster, and more reliable.</h2>
+      <p>PointMarketLB is designed to help people in Lebanon browse products online, compare prices, save items to basket, and move smoothly toward checkout and delivery. The goal is a practical, trustworthy shopping experience for everyday needs and popular deals.</p>
+      <div class="cluster" style="margin-top: 24px;">
+        <article><strong>Easy shopping</strong><div>Clear product browsing, stock visibility, and simple basket flow.</div></article>
+        <article><strong>Customer convenience</strong><div>Built for quick discovery, better decisions, and smoother online ordering.</div></article>
+        <article><strong>Delivery-focused growth</strong><div>Ready to expand into checkout, orders, delivery updates, and customer support.</div></article>
+      </div>
+    </section>
+
+    <footer class="store-footer surface">
+      <div class="store-footer-grid">
+        <div>
+          <h3>Point Market LB</h3>
+          <p>A cleaner online store experience for electronics, accessories, and shopping across Lebanon.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="/products">All Products</a>
+          <a href="/cart">Basket</a>
+          <a href="/login">Login</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="/about">Delivery Info</a>
+          <a href="/about">Contact</a>
+          <a href="/about">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

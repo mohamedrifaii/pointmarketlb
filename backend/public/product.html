@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Point Market LB</title>
+  <meta name="description" content="View live product details, current pricing, stock, and related items for Point Market LB.">
+  <script src="/tailwind-theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-surface" data-product-page="true">
+  <header class="site-header bg-background docked top-0 z-50 sticky glass-nav">
+    <div class="site-header__inner">
+      <a class="site-header__brand text-2xl font-black tracking-tighter text-primary brand-font" href="/">Point Market LB</a>
+      <nav class="site-header__nav">
+        <a class="site-header__link" data-nav="home" href="/">Home</a>
+        <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+        <a class="site-header__link" data-nav="mobiles" href="/mobiles">Mobiles</a>
+        <a class="site-header__link" data-nav="tvs" href="/tvs">TVs</a>
+        <a class="site-header__link" data-nav="audio" href="/audio">Audio</a>
+        <a class="site-header__link" data-nav="gaming" href="/gaming">Gaming</a>
+        <a class="site-header__link" data-nav="wiring" href="/wiring">Wiring</a>
+        <a class="site-header__link" data-nav="electronics" href="/electronics">Electronics</a>
+        <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+      </nav>
+      <div class="site-header__actions">
+        <form class="site-header__search" data-store-search>
+          <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+          <input type="text" name="search" placeholder="Search tech...">
+        </form>
+        <a aria-label="Login" class="site-header__icon" href="/login" data-auth-link="guest"><span class="material-symbols-outlined">person</span></a>
+        <a aria-label="Account" class="site-header__icon hidden" href="/account" data-auth-link="member"><span class="material-symbols-outlined">person</span></a>
+        <a aria-label="Go to checkout" class="site-header__icon" href="/checkout"><span class="material-symbols-outlined">shopping_cart</span><span class="site-header__badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+    <nav class="site-header__mobile-nav">
+      <a class="site-header__link" data-nav="home" href="/">Home</a>
+      <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+      <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+      <a class="site-header__link" data-nav="checkout" href="/checkout">Checkout</a>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <nav class="flex items-center space-x-2 text-xs font-medium text-on-surface-variant mb-8">
+      <a class="hover:text-primary" href="/">Home</a>
+      <span class="material-symbols-outlined text-[10px]">chevron_right</span>
+      <a class="hover:text-primary" href="/products" id="productBreadcrumbCategory">Shop</a>
+      <span class="material-symbols-outlined text-[10px]">chevron_right</span>
+      <span class="text-on-surface" id="productBreadcrumbName">Loading...</span>
+    </nav>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+      <div class="lg:col-span-7">
+        <div class="bg-surface-container-low rounded-xl p-8 flex items-center justify-center relative group overflow-hidden min-h-[520px]">
+          <span class="absolute top-4 left-4 bg-tertiary text-white px-3 py-1 text-[10px] font-bold rounded-full uppercase tracking-widest" id="productCategory">Loading</span>
+          <img class="max-h-[500px] w-auto drop-shadow-2xl transition-transform duration-500 group-hover:scale-105" id="productImage" src="" alt="">
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 space-y-8">
+        <div>
+          <h1 class="text-4xl font-extrabold tracking-tight mb-2" id="productName">Loading product...</h1>
+          <p class="text-on-surface-variant" id="productSummary">Fetching product details from the live API.</p>
+        </div>
+
+        <div class="space-y-1">
+          <div class="flex items-baseline space-x-3">
+            <span class="text-3xl font-bold text-primary" id="productPrice">$0</span>
+            <span class="text-lg text-on-surface-variant line-through" id="productComparePrice"></span>
+          </div>
+          <p class="text-xs text-on-surface-variant font-medium" id="productLbpPrice">Approx. 0 LBP</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3" id="productSpecsGrid"></div>
+
+        <div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary/40">
+          <div class="flex items-center space-x-2 text-secondary font-bold text-sm mb-1">
+            <span class="material-symbols-outlined text-lg">check_circle</span>
+            <span id="productStock">Checking stock...</span>
+          </div>
+          <p class="text-xs text-on-surface-variant" id="productDelivery">Preparing delivery details.</p>
+        </div>
+
+        <div id="productMessage" class="message hidden"></div>
+        <p class="text-on-surface-variant leading-relaxed" id="productDescription"></p>
+
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <input class="w-full sm:w-24 rounded-lg border border-outline-variant/30 bg-white px-4 py-4 text-center font-bold" id="detailQty" type="number" min="1" value="1">
+          <button class="flex-grow h-14 bg-secondary-container text-[#004e5d] font-bold rounded-lg flex items-center justify-center space-x-2 hover:opacity-90 transition-all active:scale-95" id="addToCartButton" type="button">
+            <span class="material-symbols-outlined">add_shopping_cart</span>
+            <span>Add to Cart</span>
+          </button>
+          <a class="flex-grow h-14 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded-lg flex items-center justify-center space-x-2 shadow-lg shadow-primary/20 hover:opacity-95 transition-all active:scale-95" href="/checkout" id="buyNowButton">
+            <span class="material-symbols-outlined">bolt</span>
+            <span>Buy Now</span>
+          </a>
+        </div>
+
+        <div class="space-y-2 pt-6 border-t border-outline-variant/15 text-sm" id="productSpecsTable"></div>
+      </div>
+    </div>
+
+    <section class="mt-24">
+      <div class="flex justify-between items-end mb-8 gap-4">
+        <div>
+          <h2 class="text-2xl font-extrabold tracking-tight">Related Picks</h2>
+          <p class="text-on-surface-variant text-sm">More live products from the same category.</p>
+        </div>
+        <a class="text-primary font-bold text-sm hover:underline" href="/products">View All</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6" id="relatedProducts"></div>
+    </section>
+  </main>
+
+  <footer class="bg-[#f3f3f6] w-full mt-auto py-12 border-t border-[#c3c6d6]/15">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-6 max-w-7xl mx-auto">
+      <div class="col-span-2 md:col-span-1">
+        <div class="text-lg font-bold text-[#1a1c1e] mb-4">Point Market LB</div>
+        <p class="text-xs font-medium text-[#434654] mb-6 max-w-xs">Live product details, related items, and cart actions wired to the real store data.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm mb-4">Customer Care</h4>
+        <ul class="text-xs font-medium space-y-3">
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/about">Exchange Policy</a></li>
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/about">WhatsApp Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm mb-4">Quick Links</h4>
+        <ul class="text-xs font-medium space-y-3">
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/products">Shop</a></li>
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/checkout">Checkout</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>

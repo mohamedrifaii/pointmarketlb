@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Deals | Point Market LB</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f3f3f6",
+            "primary": "#004288",
+            "primary-container": "#0059b3",
+            "tertiary": "#752d00",
+            "secondary-container": "#6ae1ff",
+            "surface-container": "#eeeef0",
+            "on-surface": "#1a1c1e",
+            "on-surface-variant": "#434654",
+            "background": "#f9f9fc",
+            "outline-variant": "#c3c6d6"
+          }
+        }
+      }
+    };
+  </script>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+  <header class="site-header bg-[#f9f9fc] docked full-width top-0 z-50 sticky glass-nav">
+    <div class="site-header__inner w-full px-6 py-4 max-w-7xl mx-auto">
+      <a class="site-header__brand text-2xl font-black tracking-tighter text-[#004288] brand-font" href="index.html">Point Market LB</a>
+      <nav class="site-header__nav">
+        <a class="site-header__link" href="index.html">Home</a>
+        <a class="site-header__link" href="mobiles.html">Mobiles</a>
+        <a class="site-header__link" href="laptops.html">Laptops</a>
+        <a class="site-header__link" href="audio.html">Audio</a>
+        <a class="site-header__link" href="gaming.html">Gaming</a>
+        <a class="site-header__link site-header__link--active" href="deals.html">Deals</a>
+      </nav>
+      <div class="site-header__actions">
+        <label class="site-header__search">
+          <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+          <input placeholder="Search deals..." type="text"/>
+        </label>
+        <a class="site-header__icon" href="index.html" aria-label="Account">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+        <a class="site-header__icon" href="checkout.html" aria-label="Go to checkout">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="site-header__badge">2</span>
+        </a>
+      </div>
+    </div>
+    <nav class="site-header__mobile-nav max-w-7xl mx-auto px-6 pb-4">
+      <a class="site-header__link" href="index.html">Home</a>
+      <a class="site-header__link" href="mobiles.html">Mobiles</a>
+      <a class="site-header__link" href="laptops.html">Laptops</a>
+      <a class="site-header__link" href="audio.html">Audio</a>
+      <a class="site-header__link" href="gaming.html">Gaming</a>
+      <a class="site-header__link site-header__link--active" href="deals.html">Deals</a>
+    </nav>
+  </header>
+  <main class="max-w-7xl mx-auto w-full px-6 py-16 flex-1">
+    <section class="mb-10">
+      <p class="text-xs font-black uppercase tracking-[0.3em] text-primary mb-4">Prototype Category</p>
+      <h1 class="text-5xl font-black tracking-tight mb-4">Current Deals</h1>
+      <p class="text-on-surface-variant max-w-2xl">These cards give the main menu a valid destination while keeping the prototype visually coherent and clickable end to end.</p>
+    </section>
+    <section class="grid md:grid-cols-3 gap-6">
+      <a class="bg-surface-container-low rounded-[28px] p-8 block hover:translate-y-[-2px] transition-transform" href="product.html">
+        <span class="inline-flex px-3 py-1 rounded-full bg-secondary-container text-xs font-bold mb-4">Featured</span>
+        <h2 class="text-2xl font-extrabold mb-2">Flagship Pro X1</h2>
+        <p class="text-on-surface-variant mb-6">Use this card to jump into the detailed product page.</p>
+        <span class="text-primary font-bold">Open product</span>
+      </a>
+      <a class="bg-surface-container-low rounded-[28px] p-8 block hover:translate-y-[-2px] transition-transform" href="mobiles.html">
+        <span class="inline-flex px-3 py-1 rounded-full bg-white text-xs font-bold mb-4">Catalog</span>
+        <h2 class="text-2xl font-extrabold mb-2">Mobile Offers</h2>
+        <p class="text-on-surface-variant mb-6">Return to the catalog page and continue through the shopping flow.</p>
+        <span class="text-primary font-bold">Open catalog</span>
+      </a>
+      <a class="bg-gradient-to-br from-primary to-primary-container rounded-[28px] p-8 block text-white hover:translate-y-[-2px] transition-transform" href="checkout.html">
+        <span class="inline-flex px-3 py-1 rounded-full bg-white/15 text-xs font-bold mb-4">Checkout</span>
+        <h2 class="text-2xl font-extrabold mb-2">Fast Finish</h2>
+        <p class="text-white/80 mb-6">Go directly to the checkout screen to validate the final step in the prototype.</p>
+        <span class="font-bold">Open checkout</span>
+      </a>
+    </section>
+  </main>
+  <footer class="bg-[#f3f3f6] w-full py-10 border-t border-[#c3c6d6]/15">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-on-surface-variant">
+      <span>&copy; 2024 Point Market LB. Precision Electronics Lebanon.</span>
+      <div class="flex gap-4">
+        <a href="index.html">Home</a>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="checkout.html">Checkout</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

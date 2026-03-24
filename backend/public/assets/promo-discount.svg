@@ -1,0 +1,36 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="520" rx="36" fill="url(#bg)"/>
+  <circle cx="1290" cy="104" r="220" fill="url(#g1)" opacity="0.7"/>
+  <circle cx="1490" cy="330" r="180" fill="#FFFFFF" opacity="0.14"/>
+  <rect x="72" y="76" width="214" height="52" rx="26" fill="#E8F3FF"/>
+  <text x="104" y="110" fill="#24588D" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">UP TO 45% OFF</text>
+  <text x="74" y="194" fill="#F7FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="800">Big Weekend Deals</text>
+  <text x="74" y="274" fill="#EAF4FF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Electronics, home essentials, and accessories at special prices.</text>
+  <rect x="76" y="338" width="214" height="62" rx="18" fill="#FFFFFF"/>
+  <text x="118" y="379" fill="#24588D" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Shop discounts</text>
+  <rect x="1084" y="78" width="360" height="364" rx="42" fill="url(#panel)" stroke="rgba(255,255,255,0.28)"/>
+  <rect x="1138" y="126" width="248" height="172" rx="30" fill="#FFFFFF" opacity="0.95"/>
+  <rect x="1166" y="154" width="192" height="116" rx="18" fill="url(#screen)"/>
+  <rect x="1162" y="326" width="200" height="22" rx="11" fill="#E9F2FB"/>
+  <rect x="1162" y="360" width="140" height="18" rx="9" fill="#D4E6F8"/>
+  <text x="1160" y="412" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">$879</text>
+  <text x="1268" y="412" fill="#DCEBFA" font-family="Segoe UI, Arial, sans-serif" font-size="26" text-decoration="line-through">$999</text>
+  <defs>
+    <linearGradient id="bg" x1="40" y1="24" x2="1532" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3F86D6"/>
+      <stop offset="1" stop-color="#122E52"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="1100" y1="-20" x2="1452" y2="286" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#89C2FF"/>
+      <stop offset="1" stop-color="#5E9FE8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="1084" y1="78" x2="1444" y2="442" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6DAAE7"/>
+      <stop offset="1" stop-color="#2B5F97"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="1166" y1="154" x2="1358" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F4477"/>
+      <stop offset="1" stop-color="#3A84D9"/>
+    </linearGradient>
+  </defs>
+</svg>

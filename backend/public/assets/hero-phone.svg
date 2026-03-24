@@ -1,0 +1,36 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="url(#bg)"/>
+  <rect x="86" y="82" width="236" height="54" rx="27" fill="#69D8FF"/>
+  <text x="124" y="116" fill="#055A76" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">NEW ARRIVAL</text>
+
+  <text x="88" y="232" fill="#171B20" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800">iPhone 15 Pro</text>
+  <text x="88" y="324" fill="#171B20" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800">Titanium.</text>
+
+  <text x="90" y="420" fill="#4A5B74" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Experience the next generation of performance with</text>
+  <text x="90" y="466" fill="#4A5B74" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">the A17 Pro chip.</text>
+
+  <text x="88" y="574" fill="#0B4D96" font-family="Segoe UI, Arial, sans-serif" font-size="74" font-weight="800">$999.00</text>
+  <text x="90" y="622" fill="#5E7088" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600">LBP 89,410,500</text>
+
+  <rect x="88" y="658" width="258" height="74" rx="14" fill="#0B4D96"/>
+  <text x="140" y="705" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Pre-order Now</text>
+
+  <rect x="366" y="658" width="224" height="74" rx="14" fill="#FFFFFF"/>
+  <text x="426" y="705" fill="#0B4D96" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Learn More</text>
+
+  <rect x="792" y="86" width="374" height="596" rx="50" fill="#FCFEFF"/>
+  <rect x="832" y="146" width="294" height="474" rx="40" fill="url(#phone)"/>
+  <rect x="946" y="108" width="66" height="12" rx="6" fill="#DCEBFB"/>
+  <circle cx="979" cy="586" r="20" fill="#DCEBFB"/>
+
+  <defs>
+    <linearGradient id="bg" x1="24" y1="34" x2="1248" y2="726" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#D7E7FA"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="832" y1="146" x2="1126" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C5CA7"/>
+      <stop offset="1" stop-color="#72ABEF"/>
+    </linearGradient>
+  </defs>
+</svg>
