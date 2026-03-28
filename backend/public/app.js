@@ -20,7 +20,12 @@ async function api(path, options = {}) {
   if (state.token) headers.Authorization = `Bearer ${state.token}`;
   const response = await fetch(path, { ...options, headers });
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(data.message || 'Request failed.');
+  if (!response.ok) {
+    const error = new Error(data.message || 'Request failed.');
+    error.status = response.status;
+    error.data = data;
+    throw error;
+  }
   return data;
 }
 
@@ -34,6 +39,31 @@ function hideMessage(target) {
   if (!target) return;
   target.textContent = '';
   target.className = 'message hidden';
+}
+
+function clearFieldErrors(form) {
+  if (!form) return;
+  form.querySelectorAll('.field-error').forEach((node) => node.remove());
+  form.querySelectorAll('.field-invalid').forEach((node) => node.classList.remove('field-invalid'));
+}
+
+function applyFieldErrors(form, errors = []) {
+  if (!form || !Array.isArray(errors)) return;
+
+  errors.forEach((error) => {
+    const fieldName = error?.field;
+    const message = error?.message;
+    if (!fieldName || !message) return;
+
+    const input = form.querySelector(`[name="${fieldName}"]`) || form.querySelector(`#${fieldName}`);
+    if (!input) return;
+
+    input.classList.add('field-invalid');
+    const helper = document.createElement('div');
+    helper.className = 'field-error';
+    helper.textContent = message;
+    input.insertAdjacentElement('afterend', helper);
+  });
 }
 
 function saveToken(token) {
@@ -818,6 +848,8 @@ function initRegisterPage() {
   const message = byId('registerMessage');
   byId('requestCodeButton').addEventListener('click', async () => {
     hideMessage(message);
+    clearFieldErrors(form);
+
     try {
       const data = await api('/api/auth/register/request-code', { method: 'POST', body: JSON.stringify(Object.fromEntries(new FormData(form).entries())) });
       byId('verifyPanel').classList.remove('hidden');
@@ -825,6 +857,7 @@ function initRegisterPage() {
       byId('previewCode').textContent = data.developmentCodePreview ? `Verification code: ${data.developmentCodePreview}` : 'Check your email inbox for the verification code.';
       showMessage(message, data.message, 'success');
     } catch (error) {
+      if (error?.data?.errors) applyFieldErrors(form, error.data.errors);
       showMessage(message, error.message, 'error');
     }
   });
@@ -835,6 +868,7 @@ function initRegisterPage() {
       const data = await api('/api/auth/register/verify', { method: 'POST', body: JSON.stringify({ email: byId('verifyEmail').value, code: byId('verificationCode').value }) });
       showMessage(message, data.message, 'success');
       form.reset();
+      clearFieldErrors(form);
       byId('verificationCode').value = '';
     } catch (error) {
       showMessage(message, error.message, 'error');
