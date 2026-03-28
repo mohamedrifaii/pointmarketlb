@@ -2571,7 +2571,8 @@ h3,
 
 @media (max-width: 1024px) {
   .site-header__inner {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
   }
 
   .site-header__nav,
@@ -2581,6 +2582,18 @@ h3,
 
   .site-header__mobile-nav {
     display: flex;
+  }
+
+  .site-header__brand {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .site-header__actions {
+    min-width: 0;
+    flex-wrap: nowrap;
   }
 
   .admin-tabs {
@@ -2600,11 +2613,11 @@ h3,
 @media (max-width: 640px) {
   .site-header__inner {
     width: min(100% - 24px, 100%);
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
 
   .admin-panel {
-    padding: 18px;
+    padding: 16px;
   }
 
   .admin-panel .section-title {
@@ -2612,31 +2625,48 @@ h3,
   }
 
   .site-header__brand {
-    font-size: 1.9rem;
+    font-size: 1.45rem;
+    line-height: 1.1;
   }
 
   .site-header__actions {
-    gap: 0.35rem;
+    gap: 0.25rem;
   }
 
   .user-menu-trigger {
-    padding: 0 0.45rem;
+    padding: 0 0.4rem;
   }
 
   .user-menu-name {
-    max-width: 64px;
+    max-width: 48px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
   .user-menu {
-    min-width: 242px;
-    right: -4px;
+    min-width: 220px;
+    right: 0;
   }
 
   .site-header__icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    min-width: 0;
+  }
+
+  .table-shell {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 640px;
   }
 }
