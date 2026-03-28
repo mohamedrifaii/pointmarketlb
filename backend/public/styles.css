@@ -2569,6 +2569,32 @@ h3,
   -webkit-line-clamp: 2;
 }
 
+@media (max-width: 1200px) {
+  .site-header__search {
+    min-width: 11rem;
+    width: min(14rem, 24vw);
+    padding: 0.72rem 0.82rem;
+  }
+
+  .user-menu-trigger {
+    min-height: 2.15rem;
+    padding: 0 0.45rem;
+    gap: 0.18rem;
+  }
+
+  .user-menu-name {
+    max-width: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.76rem;
+  }
+
+  .user-menu-caret {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .site-header__inner {
     grid-template-columns: minmax(0, 1fr) auto;
