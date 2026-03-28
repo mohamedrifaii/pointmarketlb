@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | PointMarketLB Lebanon Online Shopping Account</title>
+  <meta name="description" content="Sign in to PointMarketLB to continue shopping online and prepare your basket for checkout and delivery in Lebanon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-background text-on-surface">
+    <header class="site-header glass-nav">
+      <div class="site-header__inner">
+        <a class="site-header__brand brand-font text-primary" href="/">Point Market LB</a>
+        <nav class="site-header__nav">
+          <a class="site-header__link" data-nav="home" href="/">Home</a>
+          <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+          <a class="site-header__link" data-nav="mobiles" href="/mobiles">Mobiles</a>
+          <a class="site-header__link" data-nav="tvs" href="/tvs">TVs</a>
+          <a class="site-header__link" data-nav="audio" href="/audio">Audio</a>
+          <a class="site-header__link" data-nav="gaming" href="/gaming">Gaming</a>
+          <a class="site-header__link" data-nav="wiring" href="/wiring">Wiring</a>
+          <a class="site-header__link" data-nav="electronics" href="/electronics">Electronics</a>
+          <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        </nav>
+        <div class="site-header__actions">
+          <form class="site-header__search" data-store-search>
+            <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+            <input type="text" name="search" placeholder="Search tech...">
+          </form>
+          <a aria-label="Login" class="site-header__icon" href="/login" data-auth-link="guest"><span class="material-symbols-outlined">person</span></a>
+          <a aria-label="Account" class="site-header__icon hidden" href="/account" data-auth-link="member"><span class="material-symbols-outlined">person</span></a>
+          <a aria-label="Go to checkout" class="site-header__icon" href="/checkout"><span class="material-symbols-outlined">shopping_cart</span><span class="site-header__badge" data-cart-count>0</span></a>
+        </div>
+      </div>
+      <nav class="site-header__mobile-nav">
+        <a class="site-header__link" data-nav="home" href="/">Home</a>
+        <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+        <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="checkout" href="/checkout">Checkout</a>
+      </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    <section class="page-grid">
+      <aside class="surface">
+        <p class="eyebrow">Welcome back</p>
+        <h2 class="section-title">Sign in to continue shopping and return to your basket anytime.</h2>
+        <p>Keep your shopping flow simple, secure, and ready for checkout whenever you come back.</p>
+      </aside>
+
+      <div class="auth-panel">
+        <p class="eyebrow">Login</p>
+        <h2 class="section-title">Sign in</h2>
+        <div id="loginMessage" class="message hidden"></div>
+        <form id="loginForm" class="form-grid single">
+          <div class="form-group"><label class="form-label">Email</label><input name="email" type="email" required></div>
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <div class="password-field"><input name="password" type="password" required><button class="password-toggle" data-toggle-password type="button" aria-label="Show password"></button></div>
+          </div>
+          <button class="link-button" id="forgotPasswordToggle" type="button">Forgot password?</button>
+          <button class="button-alt" type="submit">Login</button>
+          <p style="margin: 6px 0 0; text-align: center; color: #52606d; font-size: 0.98rem;">
+            New here?
+            <a href="/register" style="color: #163252; font-weight: 700; text-decoration: none;">Create account / Sign up</a>
+          </p>
+        </form>
+
+        <div class="card hidden" id="resetPanel" style="margin-top: 18px;">
+          <p class="eyebrow">Password recovery</p>
+          <div id="resetMessage" class="message hidden"></div>
+          <div class="form-grid single">
+            <div class="form-group"><label class="form-label">Email</label><input id="resetEmail" type="email" placeholder="Your account email"></div>
+            <button class="button-soft" id="requestResetCodeButton" type="button">Send reset code</button>
+            <div class="form-group"><label class="form-label">6-digit code</label><input id="resetCode" type="text" maxlength="6"></div>
+            <div class="form-group">
+              <label class="form-label">New password</label>
+              <div class="password-field"><input id="resetPassword" type="password"><button class="password-toggle" data-toggle-password type="button" aria-label="Show password"></button></div>
+            </div>
+            <button class="button" id="resetPasswordButton" type="button">Reset password</button>
+            <p id="resetPreviewCode" style="margin: 0;"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <footer class="store-footer surface max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="store-footer-grid">
+        <div>
+          <h3>Point Market LB</h3>
+          <p>Sign in and continue shopping with a cleaner, faster basket experience.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="/products">All Products</a>
+          <a href="/cart">Basket</a>
+          <a href="/about">About Us</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="/about">Delivery Info</a>
+          <a href="/about">Contact</a>
+        </div>
+      </div>
+    </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
