@@ -2727,6 +2727,32 @@ h3,
     height: 2.25rem;
   }
 
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .category-tile {
+    min-height: 132px;
+    gap: 10px;
+    padding: 14px 10px;
+    align-content: center;
+  }
+
+  .category-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+  }
+
+  .category-tile strong {
+    font-size: 0.98rem;
+    line-height: 1.25;
+    max-width: 100%;
+    word-break: break-word;
+    text-wrap: balance;
+  }
+
   .admin-stats {
     grid-template-columns: 1fr;
   }
