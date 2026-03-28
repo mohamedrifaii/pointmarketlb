@@ -2593,6 +2593,23 @@ h3,
   .user-menu-caret {
     font-size: 0.9rem;
   }
+
+  .admin-surface .site-header__search {
+    display: none;
+  }
+
+  .admin-surface .user-menu-trigger {
+    width: 2.4rem;
+    min-width: 2.4rem;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+  }
+
+  .admin-surface .user-menu-trigger .user-menu-name,
+  .admin-surface .user-menu-trigger .user-menu-caret {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
