@@ -2624,30 +2624,16 @@ h3,
   }
 
   .user-menu-trigger {
-    min-height: 2.1rem;
-    padding: 0 0.4rem;
-    gap: 0.12rem;
-  }
-
-  .user-menu-name {
-    max-width: 44px;
-    font-size: 0.74rem;
-  }
-
-  .user-menu-caret {
-    font-size: 0.85rem;
-  }
-
-  .admin-surface .user-menu-trigger {
     width: 2.35rem;
     min-width: 2.35rem;
+    min-height: 2.1rem;
     padding: 0;
     gap: 0;
     justify-content: center;
   }
 
-  .admin-surface .user-menu-trigger .user-menu-name,
-  .admin-surface .user-menu-trigger .user-menu-caret {
+  .user-menu-trigger .user-menu-name,
+  .user-menu-trigger .user-menu-caret {
     display: none;
   }
 }
