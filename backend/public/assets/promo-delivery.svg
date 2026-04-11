@@ -1,0 +1,26 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="520" rx="36" fill="url(#bg)"/>
+  <circle cx="1340" cy="120" r="190" fill="#FFFFFF" opacity="0.14"/>
+  <rect x="76" y="76" width="220" height="52" rx="26" fill="#EAF5FF"/>
+  <text x="106" y="110" fill="#2A679F" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">DELIVERY PROMO</text>
+  <text x="74" y="194" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="800">Shop Today, Receive</text>
+  <text x="74" y="268" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="800">It Faster Tomorrow</text>
+  <text x="74" y="336" fill="#DCEBFA" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Perfect for quick basket building and ready-for-checkout orders.</text>
+  <rect x="74" y="388" width="248" height="62" rx="18" fill="#FFFFFF"/>
+  <text x="118" y="429" fill="#24588D" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Browse fast delivery</text>
+  <g>
+    <rect x="1060" y="196" width="250" height="128" rx="28" fill="#FFFFFF" opacity="0.96"/>
+    <rect x="1092" y="160" width="126" height="64" rx="18" fill="#8BBCF4"/>
+    <rect x="1216" y="198" width="76" height="56" rx="16" fill="#D6E8FA"/>
+    <circle cx="1130" cy="344" r="28" fill="#244D79"/>
+    <circle cx="1266" cy="344" r="28" fill="#244D79"/>
+    <circle cx="1130" cy="344" r="12" fill="#BDD7F6"/>
+    <circle cx="1266" cy="344" r="12" fill="#BDD7F6"/>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="10" y1="30" x2="1560" y2="518" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4B8FD8"/>
+      <stop offset="1" stop-color="#365A7C"/>
+    </linearGradient>
+  </defs>
+</svg>

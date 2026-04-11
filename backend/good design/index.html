@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Point Market LB | Precision Electronics Lebanon</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#055cb9",
+              "secondary": "#00687a",
+              "surface-container-lowest": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f3f3f6",
+              "on-secondary-container": "#006374",
+              "on-tertiary": "#ffffff",
+              "primary": "#004288",
+              "error-container": "#ffdad6",
+              "primary-container": "#0059b3",
+              "on-secondary-fixed": "#001f26",
+              "primary-fixed-dim": "#aac7ff",
+              "surface-bright": "#f9f9fc",
+              "on-tertiary-fixed-variant": "#7a3000",
+              "inverse-primary": "#aac7ff",
+              "secondary-fixed": "#adecff",
+              "inverse-surface": "#2f3133",
+              "on-surface": "#1a1c1e",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "outline-variant": "#c3c6d6",
+              "on-tertiary-fixed": "#351000",
+              "tertiary-fixed": "#ffdbcc",
+              "tertiary": "#752d00",
+              "surface-container": "#eeeef0",
+              "secondary-container": "#6ae1ff",
+              "on-primary-container": "#bed3ff",
+              "tertiary-container": "#9b3e00",
+              "surface-container-highest": "#e2e2e5",
+              "on-surface-variant": "#434654",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#004e5d",
+              "surface-variant": "#e2e2e5",
+              "primary-fixed": "#d7e3ff",
+              "on-primary-fixed": "#001b3e",
+              "background": "#f9f9fc",
+              "outline": "#737685",
+              "surface-dim": "#dadadc",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#5dd6f3",
+              "tertiary-fixed-dim": "#ffb693",
+              "surface": "#f9f9fc",
+              "surface-container-high": "#e8e8ea",
+              "on-background": "#1a1c1e",
+              "on-primary-fixed-variant": "#00458e",
+              "inverse-on-surface": "#f0f0f3",
+              "on-tertiary-container": "#ffc7ae"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="site-header bg-[#f9f9fc] dark:bg-slate-950 docked full-width top-0 z-50 sticky glass-nav">
+<div class="site-header__inner w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="site-header__brand text-2xl font-black tracking-tighter text-[#004288] dark:text-blue-500 brand-font" href="index.html">Point Market LB</a>
+<nav class="site-header__nav">
+<a class="site-header__link site-header__link--active" href="index.html">Home</a>
+<a class="site-header__link" href="mobiles.html">Mobiles</a>
+<a class="site-header__link" href="laptops.html">Laptops</a>
+<a class="site-header__link" href="audio.html">Audio</a>
+<a class="site-header__link" href="gaming.html">Gaming</a>
+<a class="site-header__link" href="deals.html">Deals</a>
+</nav>
+<div class="site-header__actions">
+<label class="site-header__search">
+<span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+<input placeholder="Search precision electronics..." type="text"/>
+</label>
+<a aria-label="Account" class="site-header__icon" href="index.html">
+<span class="material-symbols-outlined">person</span>
+</a>
+<a aria-label="Go to checkout" class="site-header__icon" href="checkout.html">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="site-header__badge">2</span>
+</a>
+</div>
+</div>
+<nav class="site-header__mobile-nav max-w-7xl mx-auto px-6 pb-4">
+<a class="site-header__link site-header__link--active" href="index.html">Home</a>
+<a class="site-header__link" href="mobiles.html">Mobiles</a>
+<a class="site-header__link" href="laptops.html">Laptops</a>
+<a class="site-header__link" href="audio.html">Audio</a>
+<a class="site-header__link" href="gaming.html">Gaming</a>
+<a class="site-header__link" href="deals.html">Deals</a>
+</nav>
+</header>
+<main class="max-w-7xl mx-auto px-6 pb-20">
+<!-- Hero Section: Editorial Asymmetry -->
+<section class="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[500px]">
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl overflow-hidden relative group">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-90" data-alt="Close up of titanium blue smartphone back" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbh1ovN31MYFAzXItxZTfne0J2v7P_Jn7GfOs4ZhM0SbYhL5U_7d9aRV2bEp0dAwgH_lyLLYPhUPhvgK6GIdoC9IOOmEdTO8X-RTPViQG8yOAq5SF7zZJL7JVTJHEdvENviTZ3wAgirZ0LIJk0YvkjNwfXL0yaLTsfpgkNisHtcSdPmUNhEXJ6JRHQp7z-D99Y9SLtXGcm-ct-r-abIztENvcpbqlXMHO6Xwffc0W1xYbpyGNtMYmjKPoRp9fRf2nKconsBpAmFV0"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 p-12 h-full flex flex-col justify-center max-w-xl">
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold tracking-widest uppercase rounded-full mb-6">New Arrival</span>
+<h1 class="text-5xl font-extrabold tracking-tighter text-on-surface mb-4 leading-none">iPhone 15 Pro <br/>Titanium.</h1>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">Experience the next generation of performance with the A17 Pro chip.</p>
+<div class="flex flex-col mb-10">
+<div class="text-4xl font-bold text-primary">$999.00</div>
+<div class="text-sm font-medium text-on-surface-variant">≈ LBP 89,410,500 <span class="text-[10px] opacity-60 ml-1 font-normal">(Rate: 89,500)</span></div>
+</div>
+<div class="flex gap-4">
+<a class="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded shadow-xl shadow-primary/10 hover:opacity-90 transition-all flex items-center gap-2" href="product.html">
+                            Pre-order Now
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="px-8 py-4 bg-surface-container-lowest text-primary font-bold border border-outline-variant/15 rounded hover:bg-surface-bright transition-all" href="product.html">
+                            Learn More
+                        </a>
+</div>
+</div>
+</div>
+<!-- Bento Grid - Side Cards -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<div class="flex-1 bg-tertiary-container/10 border border-tertiary-container/20 rounded-xl p-8 flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-tertiary text-xl font-bold tracking-tight mb-2">Flash Sale</h3>
+<p class="text-on-surface-variant text-sm font-medium">Sony WH-1000XM5</p>
+<div class="mt-4 text-2xl font-black text-on-surface">$299 <span class="text-xs line-through opacity-40">$399</span></div>
+</div>
+<img class="absolute bottom-[-20%] right-[-10%] w-48 h-48 rotate-12 group-hover:scale-110 transition-transform" data-alt="Sleek black noise cancelling headphones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3hsAfuxBQ5Q_joJCQNQ0j5aRtypgZbQdZ0PIAGjayRMONHADNDGhkhQZ86WygRMy_xY2UOTFlBAWGta6b8KN2iPQTSwUp8zaCrrOB5tKIjMgS6bN_DfWjPLNqDr-jKrvyt0_9as1_UDkOwINVZpvxd8aEtMVqAkV1fNZGMeu1kw3NFpssNLi0TDZGyd5-DKkXUtfAGXuOw3GJxT7f7y_QqPUsizrTy3S0aJQiDtYn9khOMxoObiVifSM4_onZwnvJNfpr_jOL_Pk"/>
+</div>
+<div class="flex-1 bg-secondary-fixed text-on-secondary-fixed rounded-xl p-8 flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-xl font-bold tracking-tight mb-2">Gaming Pulse</h3>
+<p class="text-on-secondary-fixed-variant text-sm font-medium">PS5 Slim Console</p>
+<button class="mt-6 px-4 py-2 bg-on-secondary-fixed text-secondary-fixed text-xs font-bold rounded-full">Check Stock</button>
+</div>
+<img class="absolute bottom-[-10%] right-[-5%] w-40 h-40 group-hover:translate-x-2 transition-transform" data-alt="PlayStation 5 console and controller" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Qovo5MJkaW6HazZGmoRb_IBSDtYcxn9btwdA_StL01VTKZjt0pU2PyoghXB-cyrZYlFr8mdQEZlNDM8gnB4UVKl0obVW-serc9SuaTk_ZynZpwZiR_-pCHLqXXqg-b52DCGEtF06Cw0zmJ-KPSYi4OvoyjHgawi8zg4B25UzaitiIswwqh1-MrWOql5inqB-0TP-9fsha31pK__-PrVytbHciqik-QzScLpX40TwejH9oICppAwJXd9tSNEEcaSG-o7Ip3tVeKk"/>
+</div>
+</div>
+</section>
+<!-- Category Grid -->
+<section class="mt-16">
+<div class="flex justify-between items-end mb-8">
+<h2 class="text-2xl font-extrabold tracking-tight text-on-surface">Browse by Category</h2>
+<a class="text-sm font-bold text-primary hover:underline underline-offset-4" href="mobiles.html">View All Categories</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">smartphone</span>
+</div>
+<span class="font-bold text-sm tracking-tight">Mobiles</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">laptop_mac</span>
+</div>
+<span class="font-bold text-sm tracking-tight">Laptops</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">headphones</span>
+</div>
+<span class="font-bold text-sm tracking-tight">Audio</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">sports_esports</span>
+</div>
+<span class="font-bold text-sm tracking-tight">Gaming</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col items-center justify-center gap-4 hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">watch</span>
+</div>
+<span class="font-bold text-sm tracking-tight">Accessories</span>
+</div>
+</div>
+</section>
+<!-- Product Grid: Hot Deals -->
+<section class="mt-20">
+<div class="flex items-center gap-4 mb-10">
+<h2 class="text-3xl font-black tracking-tighter text-on-surface">Hot Deals in Lebanon</h2>
+<div class="h-[2px] flex-1 bg-surface-container"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
+<!-- Product 1 -->
+<div class="group">
+<div class="bg-surface-container-low rounded-xl aspect-square mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Latest flagship Samsung S24 Ultra" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMLIQs2WnJaqt9f5tuCHXG1onWv2ZTmI67oGfFMUkAj3Aq6Wixm-vI9HpZEj4dV2r1KJM6MEsYb8QDwMVGC9SZC1ha6Uc9ZnJ7HK-z1-MJrUQhH-eMRmhKke0EP3y3NfGqMoUwYAzFA183RdYXdR6xJIsk-tVyzq5Rw0Bu9phr9fPPcgpHUENsYgRiHopJ7MFpzx9jGRfUKc-jXQYbiR6hgtXnHPCF3XN6bvN1aNoSMuwpE7miNOmQ7Jrow6dFX0woLkDM7M8_dNw"/>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="p-2 bg-surface-container-lowest/80 backdrop-blur-md rounded-full text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<a class="w-full py-3 bg-primary text-on-primary font-bold text-sm rounded flex items-center justify-center gap-2" href="checkout.html">
+<span class="material-symbols-outlined text-sm">shopping_bag</span>
+                                Quick Add
+                            </a>
+</div>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] font-bold text-on-surface-variant tracking-wider uppercase">Samsung</span>
+<a class="font-bold text-on-surface group-hover:text-primary transition-colors block" href="product.html">Galaxy S24 Ultra 512GB</a>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-lg font-black text-on-surface">$1,149.00</span>
+<span class="text-[10px] text-on-surface-variant font-medium">LBP 102,835,500</span>
+</div>
+<div class="flex gap-1 mt-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-full">In Stock</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface-variant text-[10px] font-bold rounded-full">New</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group">
+<div class="bg-surface-container-low rounded-xl aspect-square mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apple MacBook Pro in Space Gray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB85-8vhbAeCC7SiL_Zo8XHtUm-HVqgIVt34flylDDNtM513KA9f147LW2qHiAPPeD0PLpclZKb7z_DI9XwZ_yizKhJx3vJ3XPTJ-4Ksv754fbNdmyCgtP0oB0XWlXuV-rNQ3BAkreZqVHxRpQFcn6e327q53FSeNtBswWivO7MwathILsnkU6E-YHDh-Stn_pmGcVsQlPlIuI-TkBr_4wmkNAukDDj2Dwm1ly2pacX5W5rEDFzzcVlgneOlZJe9Oj32mi5p21jI24"/>
+<div class="absolute top-4 right-4">
+<span class="px-3 py-1 bg-tertiary text-on-tertiary text-[10px] font-black rounded-full uppercase">-15% OFF</span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<a class="w-full py-3 bg-primary text-on-primary font-bold text-sm rounded flex items-center justify-center gap-2" href="checkout.html">
+<span class="material-symbols-outlined text-sm">shopping_bag</span>
+                                Quick Add
+                            </a>
+</div>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] font-bold text-on-surface-variant tracking-wider uppercase">Apple</span>
+<a class="font-bold text-on-surface group-hover:text-primary transition-colors block" href="laptops.html">MacBook Pro M3 Max 14"</a>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-lg font-black text-on-surface">$3,199.00</span>
+<span class="text-[10px] line-through opacity-30">$3,499.00</span>
+</div>
+<div class="flex gap-1 mt-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-full">Free Delivery</span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group">
+<div class="bg-surface-container-low rounded-xl aspect-square mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Over-ear professional studio headphones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoCeR3aG5Ji57BtjFn8ePROV_M4is0fEHAwfXdvD-BVIQQSVwqNcOGF8Zo1YFVBCwq015f7BRJUj99RuyGFHvMqdBoW2DbBOMWlHYIytFQlyKTQ6jXHWFLO8saMgdNa7Epr-ola1de9fkdD5BEHautRfVO3G7HqPfHcq__KTjgHfYNhgedatk2MyGG8qLKDxzvUJ_MgEAvmeCw16GCgAWvLs0ILAor8DvEruC2GTOxhwwh0u5SHaw_9YbSfmqfSZaZo2A2CZmdx9U"/>
+<div class="absolute bottom-0 inset-x-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<a class="w-full py-3 bg-primary text-on-primary font-bold text-sm rounded flex items-center justify-center gap-2" href="checkout.html">
+<span class="material-symbols-outlined text-sm">shopping_bag</span>
+                                Quick Add
+                            </a>
+</div>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] font-bold text-on-surface-variant tracking-wider uppercase">Sony</span>
+<a class="font-bold text-on-surface group-hover:text-primary transition-colors block" href="audio.html">Sony WH-CH720N Wireless</a>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-lg font-black text-on-surface">$129.00</span>
+<span class="text-[10px] text-on-surface-variant font-medium">LBP 11,545,500</span>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group">
+<div class="bg-surface-container-low rounded-xl aspect-square mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Professional mirrorless camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzzHZ-KZkIE2I9ncUMPg9dJ4QLCmIFaSkPcej2Z4BuM_5w2E23RmHm-TwD161kb24sAMvPKJGuK6k4Zqi5Ee7J8QED24O_PVbyt5Lro0Q4Mp_sUqs0Zumjh9ihSeN1tMu3ErTQRCkDksiO9YPN1Hs6eXjNv_I_ccXtSaZsW7-y-X5a8XiOkKziUoRVyCO2dRzYYB-UfrbIhaWd4N_26Vjazh1HnbbYreuPXX-lNSPXv2H8dljVbi95yMMQHJ465I2iQ_ujbjpvecI"/>
+<div class="absolute top-4 right-4">
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface text-[10px] font-black rounded-full uppercase">Limited</span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+<a class="w-full py-3 bg-primary text-on-primary font-bold text-sm rounded flex items-center justify-center gap-2" href="checkout.html">
+<span class="material-symbols-outlined text-sm">shopping_bag</span>
+                                Quick Add
+                            </a>
+</div>
+</div>
+<div class="space-y-1">
+<span class="text-[10px] font-bold text-on-surface-variant tracking-wider uppercase">Fujifilm</span>
+<a class="font-bold text-on-surface group-hover:text-primary transition-colors block" href="deals.html">Fujifilm X-T5 Mirrorless</a>
+<div class="flex items-center gap-2 pt-1">
+<span class="text-lg font-black text-on-surface">$1,699.00</span>
+<span class="text-[10px] text-on-surface-variant font-medium">LBP 152,060,500</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f3f6] dark:bg-slate-900 w-full mt-auto py-12 border-t border-[#c3c6d6]/15">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-6 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<span class="text-lg font-bold text-[#1a1c1e] dark:text-slate-200 brand-font block mb-4">Point Market LB</span>
+<p class="font-['Inter'] text-xs font-medium text-[#434654] dark:text-slate-400 leading-relaxed max-w-xs">
+                    Precision electronics for the Lebanese market. Official warranties and global standards, delivered locally.
+                </p>
+</div>
+<div>
+<h4 class="font-['Manrope'] font-bold text-sm tracking-tight text-[#004288] dark:text-blue-400 mb-4">Customer Care</h4>
+<ul class="font-['Inter'] text-xs font-medium space-y-3">
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] transition-all" href="index.html">Exchange Policy</a></li>
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] transition-all" href="index.html">LBP/USD Rate</a></li>
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] transition-all" href="index.html">WhatsApp Support</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] font-bold text-sm tracking-tight text-[#004288] dark:text-blue-400 mb-4">Quick Links</h4>
+<ul class="font-['Inter'] text-xs font-medium space-y-3">
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] transition-all" href="index.html">Store Locator</a></li>
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] transition-all" href="index.html">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] font-bold text-sm tracking-tight text-[#004288] dark:text-blue-400 mb-4">Contact</h4>
+<ul class="font-['Inter'] text-xs font-medium space-y-3 text-[#434654] dark:text-slate-400">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Beirut, Lebanon</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">call</span> +961 01 234 567</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-[#c3c6d6]/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-['Inter'] text-xs font-medium text-[#434654] dark:text-slate-400">&copy; 2024 Point Market LB. Precision Electronics Lebanon.</span>
+<div class="flex gap-4">
+<span class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-sm">credit_card</span></span>
+<span class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-sm">payments</span></span>
+</div>
+</div>
+</footer>
+</body></html>
+
+
+
+

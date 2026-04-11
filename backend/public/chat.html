@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat With Us | Point Market LB</title>
+  <meta name="description" content="Chat with Point Market LB support for product questions, stock checks, and delivery help.">
+  <script src="/tailwind-theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col" data-chat-page="true">
+  <header class="site-header bg-background docked top-0 z-50 sticky glass-nav">
+    <div class="site-header__inner">
+      <a class="site-header__brand text-2xl font-black tracking-tighter text-primary brand-font" href="/">Point Market LB</a>
+      <nav class="site-header__nav">
+        <a class="site-header__link" data-nav="home" href="/">Home</a>
+        <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+        <a class="site-header__link" data-nav="mobiles" href="/mobiles">Mobiles</a>
+        <a class="site-header__link" data-nav="tvs" href="/tvs">TVs</a>
+        <a class="site-header__link" data-nav="audio" href="/audio">Audio</a>
+        <a class="site-header__link" data-nav="gaming" href="/gaming">Gaming</a>
+        <a class="site-header__link" data-nav="wiring" href="/wiring">Wiring</a>
+        <a class="site-header__link" data-nav="electronics" href="/electronics">Electronics</a>
+        <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+        <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+      </nav>
+      <div class="site-header__actions">
+        <form class="site-header__search" data-store-search>
+          <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+          <input type="text" name="search" placeholder="Search products before chatting...">
+        </form>
+        <a aria-label="Login" class="site-header__icon" href="/login" data-auth-link="guest"><span class="material-symbols-outlined">person</span></a>
+        <a aria-label="Account" class="site-header__icon hidden" href="/account" data-auth-link="member"><span class="material-symbols-outlined">person</span></a>
+        <a aria-label="Go to checkout" class="site-header__icon" href="/checkout"><span class="material-symbols-outlined">shopping_cart</span><span class="site-header__badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+    <nav class="site-header__mobile-nav">
+      <a class="site-header__link" data-nav="home" href="/">Home</a>
+      <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+      <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+      <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+      <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+      <a class="site-header__link" data-nav="checkout" href="/checkout">Checkout</a>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto w-full px-6 py-10 flex-1">
+    <section class="mb-8">
+      <p class="text-xs font-black uppercase tracking-[0.28em] text-primary mb-3">Live Support</p>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight mb-4">Chat With Us</h1>
+      <p class="text-on-surface-variant max-w-3xl">Ask us about stock, product recommendations, warranty details, or delivery timing. We are here to help.</p>
+    </section>
+
+    <section class="grid gap-6 lg:grid-cols-[1.2fr,0.8fr]">
+      <div class="bg-surface-container-low rounded-[26px] p-5 sm:p-7 shadow-sm">
+        <div id="chatThread" class="h-[420px] overflow-y-auto bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-4 space-y-3"></div>
+        <form id="chatComposer" class="mt-4 grid sm:grid-cols-[1fr,auto] gap-3">
+          <input class="w-full rounded-xl border-none bg-white px-4 py-3" id="chatInput" type="text" placeholder="Type your message..." maxlength="400" required>
+          <button class="px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold" type="submit">Send</button>
+        </form>
+      </div>
+
+      <aside class="space-y-4">
+        <div class="bg-surface-container-low rounded-2xl p-5">
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-primary mb-3">Quick Topics</p>
+          <div class="grid gap-2" id="chatQuickTopics">
+            <button class="text-left bg-white rounded-xl px-4 py-3 font-semibold" type="button" data-chat-topic="What are your delivery times in Lebanon?">Delivery times</button>
+            <button class="text-left bg-white rounded-xl px-4 py-3 font-semibold" type="button" data-chat-topic="Can you help me choose a gaming laptop?">Gaming laptop help</button>
+            <button class="text-left bg-white rounded-xl px-4 py-3 font-semibold" type="button" data-chat-topic="Do you offer warranty on products?">Warranty info</button>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-low rounded-2xl p-5">
+          <p class="font-bold mb-2">Need direct support?</p>
+          <p class="text-sm text-on-surface-variant mb-3">Use the contact page for full details and follow-up.</p>
+          <a class="inline-flex items-center gap-2 text-primary font-bold" href="/contact">Go to Contact Us <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="bg-[#f3f3f6] w-full py-10 border-t border-[#c3c6d6]/15">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-on-surface-variant">
+      <span>&copy; 2024 Point Market LB. Precision Electronics Lebanon.</span>
+      <div class="flex gap-4">
+        <a href="/chat">Chat With Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
+
+

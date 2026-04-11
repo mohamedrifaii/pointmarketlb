@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Details | Point Market LB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#055cb9",
+              "secondary": "#00687a",
+              "surface-container-lowest": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f3f3f6",
+              "on-secondary-container": "#006374",
+              "on-tertiary": "#ffffff",
+              "primary": "#004288",
+              "error-container": "#ffdad6",
+              "primary-container": "#0059b3",
+              "on-secondary-fixed": "#001f26",
+              "primary-fixed-dim": "#aac7ff",
+              "surface-bright": "#f9f9fc",
+              "on-tertiary-fixed-variant": "#7a3000",
+              "inverse-primary": "#aac7ff",
+              "secondary-fixed": "#adecff",
+              "inverse-surface": "#2f3133",
+              "on-surface": "#1a1c1e",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "outline-variant": "#c3c6d6",
+              "on-tertiary-fixed": "#351000",
+              "tertiary-fixed": "#ffdbcc",
+              "tertiary": "#752d00",
+              "surface-container": "#eeeef0",
+              "secondary-container": "#6ae1ff",
+              "on-primary-container": "#bed3ff",
+              "tertiary-container": "#9b3e00",
+              "surface-container-highest": "#e2e2e5",
+              "on-surface-variant": "#434654",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#004e5d",
+              "surface-variant": "#e2e2e5",
+              "primary-fixed": "#d7e3ff",
+              "on-primary-fixed": "#001b3e",
+              "background": "#f9f9fc",
+              "outline": "#737685",
+              "surface-dim": "#dadadc",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#5dd6f3",
+              "tertiary-fixed-dim": "#ffb693",
+              "surface": "#f9f9fc",
+              "surface-container-high": "#e8e8ea",
+              "on-background": "#1a1c1e",
+              "on-primary-fixed-variant": "#00458e",
+              "inverse-on-surface": "#f0f0f3",
+              "on-tertiary-container": "#ffc7ae"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container">
+<!-- TopNavBar (Shared Component) -->
+<header class="site-header bg-[#f9f9fc] dark:bg-slate-950 docked full-width top-0 z-50 sticky glass-nav">
+<div class="site-header__inner w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="site-header__brand text-2xl font-black tracking-tighter text-[#004288] dark:text-blue-500 brand-font" href="index.html">
+                Point Market LB
+            </a>
+<nav class="site-header__nav">
+<a class="site-header__link" href="index.html">Home</a>
+<a class="site-header__link site-header__link--active" href="mobiles.html">Mobiles</a>
+<a class="site-header__link" href="laptops.html">Laptops</a>
+<a class="site-header__link" href="audio.html">Audio</a>
+<a class="site-header__link" href="gaming.html">Gaming</a>
+<a class="site-header__link" href="deals.html">Deals</a>
+</nav>
+<div class="site-header__actions">
+<label class="site-header__search">
+<span class="material-symbols-outlined text-on-surface-variant text-lg" data-icon="search">search</span>
+<input placeholder="Search tech..." type="text"/>
+</label>
+<a aria-label="Account" class="site-header__icon" href="index.html">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+<a aria-label="Go to checkout" class="site-header__icon" href="checkout.html">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="site-header__badge">2</span>
+</a>
+</div>
+</div>
+<nav class="site-header__mobile-nav max-w-7xl mx-auto px-6 pb-4">
+<a class="site-header__link" href="index.html">Home</a>
+<a class="site-header__link site-header__link--active" href="mobiles.html">Mobiles</a>
+<a class="site-header__link" href="laptops.html">Laptops</a>
+<a class="site-header__link" href="audio.html">Audio</a>
+<a class="site-header__link" href="gaming.html">Gaming</a>
+<a class="site-header__link" href="deals.html">Deals</a>
+</nav>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-8">
+<!-- Breadcrumb -->
+<nav class="flex items-center space-x-2 text-xs font-medium text-on-surface-variant mb-8">
+<a class="hover:text-primary" href="index.html">Home</a>
+<span class="material-symbols-outlined text-[10px]" data-icon="chevron_right">chevron_right</span>
+<a class="hover:text-primary" href="mobiles.html">Mobiles</a>
+<span class="material-symbols-outlined text-[10px]" data-icon="chevron_right">chevron_right</span>
+<span class="text-on-surface">Flagship Pro X1</span>
+</nav>
+<!-- Product Hero Section (Asymmetric Layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+<!-- Gallery: Left Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col-reverse md:flex-row gap-4">
+<div class="flex md:flex-col gap-4 overflow-x-auto md:overflow-visible pb-2 md:pb-0">
+<div class="w-20 h-20 flex-shrink-0 bg-surface-container-lowest border-2 border-primary rounded-lg p-2 cursor-pointer transition-transform hover:scale-105 overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Smartphone main front view professional shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT0KOfyYDTeO_VGBsKvKGsu6S0r7oWXDpHRwB3Ncu7gUMY82JmwTNz5blWgfyG0OQ32jWI-TLNSo2hFabwY_LO3E19H1bSvkknKT66Tr_TawaNp5yGLxq8OZBeIBJwPOV194WA28XFXvP8w4JlC-LBjq6IRaem8GeQ_We7d6G9ewCIujTKf4kgboUYgpaOHnZOtAr5j_KqzvhPF6znX9GQbn5HpHYjKs8h98IF7nt2kvmQhmgE5iN-kit5XaOOeF8Unl7ZN7HDuxk"/>
+</div>
+<div class="w-20 h-20 flex-shrink-0 bg-surface-container-lowest border border-outline-variant/15 rounded-lg p-2 cursor-pointer transition-transform hover:scale-105 overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Smartphone side profile showing buttons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMuQXCnZ71kPQbUG8uxnqusq_w3g6TBYL_3iDZ4E7ae5Q_gfb_smtbtvCYI67rq8xLaQZZWUoU4-9k6-2Y_1F6dvc1IN55zBFC7EqgtuE7OkboORKXu0B1OiSHcLYMe6pdTs8M6yAWvmF-s98xlmEn1Zbq2jHh0rozfhypjQrMfJpoubbCm8340xHBcUYvL9YA4iDhr5_lyH0j0OQwkmUpHEIWJVWFQ4QOfUUOswrwcQAF_Fa1oDRel9ZjxVX8TENovBHUIvIDzAY"/>
+</div>
+<div class="w-20 h-20 flex-shrink-0 bg-surface-container-lowest border border-outline-variant/15 rounded-lg p-2 cursor-pointer transition-transform hover:scale-105 overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Smartphone camera array close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXHCXXOrfcGZBIULxn6-U0tK1NbBhqWaBr1ODAZozNF8dutwJXtABfqddmXfaDy9JVPZK89-i_6ZY8mYh59bKfxcvlvIUn-j7IV87pg1RUPeKvhffLK3oHesN9XX8YQMSXuzfne5Ny0HgtN0kSm1kgq24OhYUshVHtjoOYyfUFVX5g9OCe4_YVILGB0anFFSIPBUy11x80otZkQlnNDO9PtHt1bCyLHskmkmyb45cdJvbU08qzCsElvga558NPKrQnGpVJsfPKhFI"/>
+</div>
+</div>
+<div class="flex-grow bg-surface-container-low rounded-xl p-8 flex items-center justify-center relative group overflow-hidden">
+<span class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 text-[10px] font-bold rounded-full uppercase tracking-widest">New Release</span>
+<button class="absolute top-4 right-4 bg-white/80 backdrop-blur shadow-sm p-2 rounded-full text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="zoom_in">zoom_in</span>
+</button>
+<img class="max-h-[500px] w-auto drop-shadow-2xl transition-transform duration-500 group-hover:scale-105" data-alt="Premium flagship smartphone in midnight blue color" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQRbFZNy4vu0KcxK0LmJRWdI1Kt-gotzZZkCWRAaJVE-knQsbhZlmBUhGHblls3LUTY1qcLVYGkzV_g8zSFejAaNNgGbiai5-jz3G088H3SmJRZWfDmYioBzFkHkqJlRqxb2OWtVe0jM6KRe85PIgwBNlfHnWv-3pxBTtfAskMbvmPLOJEM1v-BXfTWI0AQU9XqoR51Hkp0n_bHReL1nIJkf4ivuA7WpNjJlXaP9ToidVhB4Znkbe-qc-KHWu_Oiiflk2qyDsByQs"/>
+</div>
+</div>
+<!-- Details: Right Column (5 cols) -->
+<div class="lg:col-span-5 space-y-8">
+<div>
+<h1 class="text-4xl font-extrabold tracking-tight mb-2">Flagship Pro X1 (256GB)</h1>
+<div class="flex items-center space-x-4">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star_half" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="text-xs font-medium text-on-surface-variant">(142 verified reviews)</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="flex items-baseline space-x-3">
+<span class="text-3xl font-bold text-primary">$1,199.00</span>
+<span class="text-lg text-on-surface-variant line-through">$1,299.00</span>
+</div>
+<p class="text-xs text-on-surface-variant font-medium">LBP 107,310,500 <span class="text-[10px] bg-surface-container-high px-1 rounded">Rate: 89,500</span></p>
+</div>
+<!-- Spec Grid (Bento Style) -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="smartphone">smartphone</span>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Screen</p>
+<p class="text-sm font-bold">6.8" OLED 120Hz</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="memory">memory</span>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Processor</p>
+<p class="text-sm font-bold">Snapdragon Gen 4</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="memory_alt">memory_alt</span>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">RAM / Storage</p>
+<p class="text-sm font-bold">12GB / 256GB</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="battery_full">battery_full</span>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Battery</p>
+<p class="text-sm font-bold">5,500 mAh</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg border-l-4 border-secondary/40">
+<div class="flex items-center space-x-2 text-secondary font-bold text-sm mb-1">
+<span class="material-symbols-outlined text-lg" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>In Stock &amp; Ready to Ship</span>
+</div>
+<p class="text-xs text-on-surface-variant">Delivery within 24-48 hours in Beirut and Mount Lebanon. Other regions up to 72 hours.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="flex-grow h-14 bg-secondary-fixed text-on-secondary-fixed-variant font-bold rounded-lg flex items-center justify-center space-x-2 hover:opacity-90 transition-all active:scale-95" href="checkout.html">
+<span class="material-symbols-outlined" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span>Add to Cart</span>
+</a>
+<a class="flex-grow h-14 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded-lg flex items-center justify-center space-x-2 shadow-lg shadow-primary/20 hover:opacity-95 transition-all active:scale-95" href="checkout.html">
+<span class="material-symbols-outlined" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>Buy Now</span>
+</a>
+</div>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/15 text-[11px] font-bold text-on-surface-variant uppercase tracking-widest">
+<div class="flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
+<span>1 Year Local Warranty</span>
+</div>
+<div class="flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm" data-icon="keyboard_return">keyboard_return</span>
+<span>7-Day Return</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Accessories -->
+<section class="mt-24">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h2 class="text-2xl font-extrabold tracking-tight">Essential Accessories</h2>
+<p class="text-on-surface-variant text-sm">Everything you need for your new Flagship Pro X1</p>
+</div>
+<a class="text-primary font-bold text-sm hover:underline" href="mobiles.html">View All</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+<!-- Acc Item 1 -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-low rounded-xl p-4 mb-3 relative overflow-hidden flex items-center justify-center aspect-square">
+<img class="w-4/5 h-auto transition-transform duration-300 group-hover:scale-110" data-alt="Clear protective smartphone case" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-xnjBi2XuKSeQ_deMsqcGOUBtevS7oKvgNqJgwxbh9EDkxE35QgRf7KdlR7B4G98_EwLFNgb586F9Ek2R0Vnn3iAeEmf_di1JlbK8KpIyPCfxQoOuZ8zjYATdRKRZMwoCgDRwIjtuvhOLujS3RMJsMqNHGzNxGiFlBVV4bzpUzPBy36nnPDrsUQtVq2YwEs4ArBW6VTyDT8KJL6VwHw5Vmev9S-dHqJkXZ_UaPSfSNrvtqj5h_7NH21lNvDek_6fOCK9HitkknUQ"/>
+</div>
+<h3 class="font-bold text-sm mb-1 line-clamp-1">Liquid Silicon Case - Clear</h3>
+<p class="text-primary font-bold text-sm">$19.00</p>
+<p class="text-[10px] text-on-surface-variant">LBP 1,700,500</p>
+</div>
+<!-- Acc Item 2 -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-low rounded-xl p-4 mb-3 relative overflow-hidden flex items-center justify-center aspect-square">
+<img class="w-4/5 h-auto transition-transform duration-300 group-hover:scale-110" data-alt="TWS wireless earbuds white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSnKUR8-5VqlPWMq-pm0nBo_OpuD2sVA0H8amViMXtba8bRhmKTarrkH8J4VIhyl4_IXi9WtLFmosS2FGnHzuiZgqLQnD58QSho4T2n0OX_2DGrCzjcAQeUuIBdRlDKk4qkVQuYT6yJpDQA5sQ0WAcXdaYrXwnPmfqw6eX2-WbfPlB6_l2g6sYbUDNP4THccO-2_oDIs8qZ1csLcM2DKnURRc_xeeCjHSDAG5SfQ2v8twegCKW7TGxTdU9SiW-XjRu4DDdtYHCjZA"/>
+</div>
+<h3 class="font-bold text-sm mb-1 line-clamp-1">Pro Audio TWS Buds</h3>
+<p class="text-primary font-bold text-sm">$89.00</p>
+<p class="text-[10px] text-on-surface-variant">LBP 7,965,500</p>
+</div>
+<!-- Acc Item 3 -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-low rounded-xl p-4 mb-3 relative overflow-hidden flex items-center justify-center aspect-square">
+<img class="w-4/5 h-auto transition-transform duration-300 group-hover:scale-110" data-alt="Fast wall charger block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFHlVvUPJ976pbHwx6tI4hRHhZGzbAwpdQTV5udaJ-v_IeUN_ZUK_-BuMRJSZYTnu-lfnb-efy3aKUduX5yxTYatT4PfN_1eY5hRbmv1TBTxl57VscC1WMdoTfHvIzrhYiGkIi-vSA8LAx2IqKy-FFnU4ClSnMJ0dEJ3_z7olgFuN_moluLQkJHTr2J51Ezd1KbPrFvUioPc1rXUJ1_6qUUP9AOqQmCykNVb6-5M22ygU05WZm3OX_Vdpspg6PE2VqGer02hsv0fY"/>
+</div>
+<h3 class="font-bold text-sm mb-1 line-clamp-1">65W Super Fast Charger</h3>
+<p class="text-primary font-bold text-sm">$45.00</p>
+<p class="text-[10px] text-on-surface-variant">LBP 4,027,500</p>
+</div>
+<!-- Acc Item 4 -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-low rounded-xl p-4 mb-3 relative overflow-hidden flex items-center justify-center aspect-square">
+<img class="w-4/5 h-auto transition-transform duration-300 group-hover:scale-110" data-alt="9H Tempered glass screen protector" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn5FqgzD-G-p2q6NwnPEozp75z4fjFbfhTyrK7NgCKYhfBC8Q1Hhu-gzRRT8wVJvNTCrrxI69d3M_dcruEM7F54NJGyc5UVm0y2KmywKq8P7yXiGiBRObICcco7uymIUTZ3iclvlke0q8jNP2mECz0WJ7JP4-NKAr7EQq4l5vewQ6tYuynyrV6MdEE2JT8TSCsEPUkBSh6BE0RuvAYuZfG9jjX4QfdRzj-b2gpyKGG6Ao7xZmxsVqQsXG7wnb1jNzwxUEB_8bLZo0"/>
+</div>
+<h3 class="font-bold text-sm mb-1 line-clamp-1">9H Tempered Glass Protector</h3>
+<p class="text-primary font-bold text-sm">$12.00</p>
+<p class="text-[10px] text-on-surface-variant">LBP 1,074,000</p>
+</div>
+<!-- Acc Item 5 -->
+<div class="group cursor-pointer hidden lg:block">
+<div class="bg-surface-container-low rounded-xl p-4 mb-3 relative overflow-hidden flex items-center justify-center aspect-square">
+<img class="w-4/5 h-auto transition-transform duration-300 group-hover:scale-110" data-alt="Magnetic wireless charging stand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfnmNYmBawlC425QrLN0bHfqfsjPUhKU-A6WtPrzYOJDlsEBGiPkLuGkqitgWBcp0ccI6_1kOyW7N5mWTtrFJUNLq3OOZ1Yz_ET-y8QnsfWsBpAZw4lFPTgkBCQKO68FTdE1WrxfnDuR7UXZjGyCwfkKf60TTc-9ako8Bmfq1eZ0nmTgPVlShDWzGtuwLE8bQoC6kFhrLWRTh1CirYa990rBkKFTb6uFfhWRBl5g_JoatJXiV0WFq7NkmIPNWbBPpDYn9t44wWEo4"/>
+</div>
+<h3 class="font-bold text-sm mb-1 line-clamp-1">Wireless Charging Dock</h3>
+<p class="text-primary font-bold text-sm">$59.00</p>
+<p class="text-[10px] text-on-surface-variant">LBP 5,280,500</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-[#f3f3f6] dark:bg-slate-900 w-full mt-auto py-12 border-t border-[#c3c6d6]/15">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-6 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="text-lg font-bold text-[#1a1c1e] dark:text-slate-200 mb-4">Point Market LB</div>
+<p class="font-['Inter'] text-xs font-medium text-[#434654] dark:text-slate-400 mb-6 max-w-xs">Precision Electronics Lebanon. Your trusted source for genuine technology products with local support.</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="public">public</span>
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="mail">mail</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-4">Customer Care</h4>
+<ul class="font-['Inter'] text-xs font-medium space-y-3">
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] dark:hover:text-blue-300 Ease-in-out transition-all" href="index.html">Store Locator</a></li>
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] dark:hover:text-blue-300 Ease-in-out transition-all" href="index.html">Exchange Policy</a></li>
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] dark:hover:text-blue-300 Ease-in-out transition-all" href="index.html">WhatsApp Support</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-4">Quick Links</h4>
+<ul class="font-['Inter'] text-xs font-medium space-y-3">
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] dark:hover:text-blue-300 Ease-in-out transition-all" href="index.html">LBP/USD Rate</a></li>
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] dark:hover:text-blue-300 Ease-in-out transition-all" href="index.html">Terms of Service</a></li>
+<li><a class="text-[#434654] dark:text-slate-400 hover:text-[#004288] dark:hover:text-blue-300 Ease-in-out transition-all" href="index.html">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-4">Contact Us</h4>
+<div class="font-['Inter'] text-xs font-medium space-y-3 text-[#434654] dark:text-slate-400">
+<p class="flex items-center space-x-2"><span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span> <span>Jal El Dib, Beirut</span></p>
+<p class="flex items-center space-x-2"><span class="material-symbols-outlined text-base" data-icon="call">call</span> <span>+961 01 123 456</span></p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-[#c3c6d6]/10 text-center">
+<p class="font-['Inter'] text-[10px] font-medium text-[#434654] dark:text-slate-500 uppercase tracking-widest">&copy; 2024 Point Market LB. Precision Electronics Lebanon.</p>
+</div>
+</footer>
+</body></html>
+
+
+
+

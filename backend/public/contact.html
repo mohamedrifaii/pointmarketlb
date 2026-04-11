@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Point Market LB</title>
+  <meta name="description" content="Contact Point Market LB for support, sales questions, and order help.">
+  <script src="/tailwind-theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col" data-contact-page="true">
+  <header class="site-header bg-background docked top-0 z-50 sticky glass-nav">
+    <div class="site-header__inner">
+      <a class="site-header__brand text-2xl font-black tracking-tighter text-primary brand-font" href="/">Point Market LB</a>
+      <nav class="site-header__nav">
+        <a class="site-header__link" data-nav="home" href="/">Home</a>
+        <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+        <a class="site-header__link" data-nav="mobiles" href="/mobiles">Mobiles</a>
+        <a class="site-header__link" data-nav="tvs" href="/tvs">TVs</a>
+        <a class="site-header__link" data-nav="audio" href="/audio">Audio</a>
+        <a class="site-header__link" data-nav="gaming" href="/gaming">Gaming</a>
+        <a class="site-header__link" data-nav="wiring" href="/wiring">Wiring</a>
+        <a class="site-header__link" data-nav="electronics" href="/electronics">Electronics</a>
+        <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+        <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+      </nav>
+      <div class="site-header__actions">
+        <form class="site-header__search" data-store-search>
+          <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+          <input type="text" name="search" placeholder="Search products...">
+        </form>
+        <a aria-label="Login" class="site-header__icon" href="/login" data-auth-link="guest"><span class="material-symbols-outlined">person</span></a>
+        <a aria-label="Account" class="site-header__icon hidden" href="/account" data-auth-link="member"><span class="material-symbols-outlined">person</span></a>
+        <a aria-label="Go to checkout" class="site-header__icon" href="/checkout"><span class="material-symbols-outlined">shopping_cart</span><span class="site-header__badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+    <nav class="site-header__mobile-nav">
+      <a class="site-header__link" data-nav="home" href="/">Home</a>
+      <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+      <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+      <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+      <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+      <a class="site-header__link" data-nav="checkout" href="/checkout">Checkout</a>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto w-full px-6 py-10 flex-1">
+    <section class="mb-8">
+      <p class="text-xs font-black uppercase tracking-[0.28em] text-primary mb-3">Customer Support</p>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight mb-4">Contact Us</h1>
+      <p class="text-on-surface-variant max-w-3xl">Send us your question and our team will follow up. You can also use live chat for quick help.</p>
+    </section>
+
+    <section class="grid gap-6 lg:grid-cols-[1.2fr,0.8fr]">
+      <div class="bg-surface-container-low rounded-[26px] p-5 sm:p-7 shadow-sm">
+        <div id="contactMessage" class="message hidden mb-4"></div>
+        <form id="contactForm" class="grid gap-4 sm:grid-cols-2">
+          <div>
+            <label class="text-xs font-black uppercase tracking-[0.18em] text-on-surface-variant block mb-2">Full Name</label>
+            <input class="w-full rounded-xl border-none bg-white px-4 py-3" name="name" type="text" required>
+          </div>
+          <div>
+            <label class="text-xs font-black uppercase tracking-[0.18em] text-on-surface-variant block mb-2">Email</label>
+            <input class="w-full rounded-xl border-none bg-white px-4 py-3" name="email" type="email" required>
+          </div>
+          <div>
+            <label class="text-xs font-black uppercase tracking-[0.18em] text-on-surface-variant block mb-2">Phone</label>
+            <input class="w-full rounded-xl border-none bg-white px-4 py-3" name="phone" type="tel" placeholder="Optional">
+          </div>
+          <div>
+            <label class="text-xs font-black uppercase tracking-[0.18em] text-on-surface-variant block mb-2">Topic</label>
+            <select class="w-full rounded-xl border-none bg-white px-4 py-3" name="topic" required>
+              <option value="">Select a topic</option>
+              <option value="order">Order Support</option>
+              <option value="product">Product Question</option>
+              <option value="warranty">Warranty & Returns</option>
+              <option value="partnership">Business Inquiry</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="text-xs font-black uppercase tracking-[0.18em] text-on-surface-variant block mb-2">Message</label>
+            <textarea class="w-full rounded-xl border-none bg-white px-4 py-3" name="message" rows="6" required placeholder="How can we help?"></textarea>
+          </div>
+          <div class="sm:col-span-2 flex flex-wrap gap-3">
+            <button class="px-7 py-3 rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold" type="submit">Send Message</button>
+            <a class="px-7 py-3 rounded-xl bg-white text-primary font-bold" href="/chat">Open Live Chat</a>
+          </div>
+        </form>
+      </div>
+
+      <aside class="space-y-4">
+        <div class="bg-surface-container-low rounded-2xl p-5">
+          <p class="text-xs font-black uppercase tracking-[0.22em] text-primary mb-3">Reach Us</p>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span>+961 01 234 567</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">mail</span>support@pointmarketlb.com</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span>Beirut, Lebanon</li>
+          </ul>
+        </div>
+
+        <div class="bg-surface-container-low rounded-2xl p-5">
+          <p class="font-bold mb-2">Fastest option</p>
+          <p class="text-sm text-on-surface-variant mb-3">For urgent questions, use chat and we will respond instantly on-page.</p>
+          <a class="inline-flex items-center gap-2 text-primary font-bold" href="/chat">Chat With Us <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="bg-[#f3f3f6] w-full py-10 border-t border-[#c3c6d6]/15">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-on-surface-variant">
+      <span>&copy; 2024 Point Market LB. Precision Electronics Lebanon.</span>
+      <div class="flex gap-4">
+        <a href="/chat">Chat With Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
+
+

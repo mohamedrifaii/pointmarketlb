@@ -1,0 +1,26 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="url(#bg)"/>
+  <rect x="88" y="84" width="222" height="54" rx="27" fill="#F3E5DB"/>
+  <text x="134" y="118" fill="#8A4700" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">FLASH SALE</text>
+
+  <text x="88" y="234" fill="#171F29" font-family="Segoe UI, Arial, sans-serif" font-size="74" font-weight="800">Sony WH-1000XM5</text>
+  <text x="90" y="336" fill="#556982" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Immersive noise cancellation with refined sound</text>
+  <text x="90" y="382" fill="#556982" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">for daily listening, travel, and work.</text>
+
+  <text x="88" y="550" fill="#171F29" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">$299</text>
+  <text x="250" y="550" fill="#9DA5AE" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" text-decoration="line-through">$399</text>
+
+  <rect x="88" y="620" width="230" height="74" rx="14" fill="#0B4D96"/>
+  <text x="140" y="667" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Shop Audio</text>
+
+  <circle cx="970" cy="374" r="154" fill="#1C232C"/>
+  <circle cx="970" cy="374" r="96" fill="#313947" stroke="#8C97A5" stroke-width="12"/>
+  <path d="M855 356C855 252 918 180 1007 180C1073 180 1126 222 1150 277" stroke="#242B35" stroke-width="30" stroke-linecap="round"/>
+
+  <defs>
+    <linearGradient id="bg" x1="34" y1="32" x2="1248" y2="726" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCF7F4"/>
+      <stop offset="1" stop-color="#E9DDD5"/>
+    </linearGradient>
+  </defs>
+</svg>

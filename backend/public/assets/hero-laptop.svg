@@ -1,0 +1,34 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="url(#bg)"/>
+  <rect x="88" y="82" width="224" height="54" rx="27" fill="#D9EEFF"/>
+  <text x="135" y="116" fill="#0B4D96" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">TOP PICK</text>
+
+  <text x="88" y="234" fill="#171C24" font-family="Segoe UI, Arial, sans-serif" font-size="82" font-weight="800">MacBook Pro</text>
+  <text x="88" y="326" fill="#171C24" font-family="Segoe UI, Arial, sans-serif" font-size="82" font-weight="800">M3 Max 14"</text>
+
+  <text x="90" y="424" fill="#556982" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Precision performance, long battery life, and a</text>
+  <text x="90" y="470" fill="#556982" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">display built for creators and pros.</text>
+
+  <text x="88" y="584" fill="#0B4D96" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">$3,199.00</text>
+  <text x="418" y="584" fill="#98A2AF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" text-decoration="line-through">$3,499.00</text>
+
+  <rect x="88" y="640" width="254" height="74" rx="14" fill="#0B4D96"/>
+  <text x="144" y="687" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Shop Laptop</text>
+
+  <g>
+    <rect x="748" y="160" width="438" height="264" rx="26" fill="#151C24"/>
+    <rect x="770" y="180" width="394" height="224" rx="16" fill="url(#screen)"/>
+    <path d="M700 462H1230L1168 536H762L700 462Z" fill="#CBD3DE"/>
+  </g>
+
+  <defs>
+    <linearGradient id="bg" x1="28" y1="38" x2="1248" y2="726" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#E4ECF6"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="770" y1="180" x2="1164" y2="404" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2F54"/>
+      <stop offset="1" stop-color="#618CC4"/>
+    </linearGradient>
+  </defs>
+</svg>

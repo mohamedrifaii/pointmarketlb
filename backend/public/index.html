@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Point Market LB | Precision Electronics Lebanon</title>
+  <meta name="description" content="Shop live products, featured deals, and category collections for Point Market LB with real inventory and cart functionality.">
+  <script src="/tailwind-theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-surface selection:bg-blue-100" data-home-page="true">
+  <header class="site-header bg-background docked top-0 z-50 sticky glass-nav">
+    <div class="site-header__inner">
+      <a class="site-header__brand text-2xl font-black tracking-tighter text-primary brand-font" href="/">Point Market LB</a>
+      <nav class="site-header__nav">
+        <a class="site-header__link" data-nav="home" href="/">Home</a>
+        <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+        <a class="site-header__link" data-nav="mobiles" href="/mobiles">Mobiles</a>
+        <a class="site-header__link" data-nav="tvs" href="/tvs">TVs</a>
+        <a class="site-header__link" data-nav="audio" href="/audio">Audio</a>
+        <a class="site-header__link" data-nav="gaming" href="/gaming">Gaming</a>
+        <a class="site-header__link" data-nav="wiring" href="/wiring">Wiring</a>
+        <a class="site-header__link" data-nav="electronics" href="/electronics">Electronics</a>
+        <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+        <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+      </nav>
+      <div class="site-header__actions">
+        <form class="site-header__search" data-store-search>
+          <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+          <input type="text" name="search" placeholder="Search precision electronics...">
+        </form>
+        <a aria-label="Login" class="site-header__icon" href="/login" data-auth-link="guest">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+        <a aria-label="Account" class="site-header__icon hidden" href="/account" data-auth-link="member">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+        <a aria-label="Admin" class="site-header__icon hidden" href="/admin" data-admin-link="true">
+          <span class="material-symbols-outlined">shield_person</span>
+        </a>
+        <a aria-label="Go to checkout" class="site-header__icon" href="/checkout">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="site-header__badge" data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+    <nav class="site-header__mobile-nav">
+      <a class="site-header__link" data-nav="home" href="/">Home</a>
+      <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+      <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+        <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+      <a class="site-header__link" data-nav="checkout" href="/checkout">Checkout</a>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 pb-20">
+    <section class="mt-6 sm:mt-8 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
+      <div class="home-hero-panel lg:col-span-8 bg-surface-container-low rounded-xl overflow-hidden relative group min-h-[420px] sm:min-h-[500px]">
+        <div class="absolute inset-0 z-0 home-hero-image-wrap">
+          <img class="w-full h-full object-cover opacity-90" id="homeHeroImage" src="" alt="">
+          <div class="home-hero-overlay absolute inset-0 bg-gradient-to-r from-surface-container-low via-transparent to-transparent"></div>
+        </div>
+        <div class="home-hero-copy relative z-10 p-6 sm:p-8 lg:p-12 h-full flex flex-col justify-center max-w-xl">
+          <span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold tracking-widest uppercase rounded-full mb-6" id="homeHeroBadge">Featured</span>
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tighter text-on-surface mb-4 leading-[0.95] break-words" id="homeHeroTitle">Loading featured product...</h1>
+          <p class="text-on-surface-variant text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed" id="homeHeroSummary">Pulling the latest featured product from the live shop.</p>
+          <div class="flex flex-col mb-10">
+            <div class="text-3xl sm:text-4xl font-bold text-primary" id="homeHeroPrice">$0</div>
+            <div class="text-sm font-medium text-on-surface-variant" id="homeHeroLbp">Approx. 0 LBP</div>
+          </div>
+          <div class="flex gap-3 sm:gap-4 flex-wrap">
+            <a class="w-full sm:w-auto justify-center px-5 py-3 sm:px-8 sm:py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded shadow-xl shadow-primary/10 hover:opacity-90 transition-all flex items-center gap-2" href="/products" id="homeHeroPrimaryLink">
+              Shop Now
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+            <a class="w-full sm:w-auto text-center px-5 py-3 sm:px-8 sm:py-4 bg-surface-container-lowest text-primary font-bold border border-outline-variant/15 rounded hover:bg-surface-container transition-all" href="/products" id="homeHeroSecondaryLink">
+              View Category
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-4 flex flex-col gap-6">
+        <div class="flex-1 bg-orange-50 border border-orange-100 rounded-xl p-8 flex flex-col justify-between relative overflow-hidden">
+          <div class="relative z-10">
+            <h3 class="text-tertiary text-xl font-bold tracking-tight mb-2">Flash Sale</h3>
+            <p class="text-on-surface-variant text-sm font-medium" id="flashPromoName">Loading...</p>
+            <div class="mt-4 text-2xl font-black text-on-surface"><span id="flashPromoPrice">$0</span> <span class="text-xs line-through opacity-40" id="flashPromoCompare"></span></div>
+            <a class="inline-block mt-6 px-4 py-2 bg-white text-primary text-xs font-bold rounded-full" href="/products" id="flashPromoLink">Open product</a>
+          </div>
+          <img class="absolute bottom-[-10%] right-[-5%] w-40 h-40 object-cover rounded-full opacity-90" id="flashPromoImage" src="" alt="">
+        </div>
+
+        <div class="flex-1 bg-secondary-container text-slate-900 rounded-xl p-8 flex flex-col justify-between relative overflow-hidden">
+          <div class="relative z-10">
+            <h3 class="text-xl font-bold tracking-tight mb-2">Gaming Pulse</h3>
+            <p class="text-sm font-medium" id="gamingPromoName">Loading...</p>
+            <a class="mt-6 inline-flex px-4 py-2 bg-slate-950 text-white text-xs font-bold rounded-full" href="/gaming" id="gamingPromoLink">Check Stock</a>
+          </div>
+          <img class="absolute bottom-[-10%] right-[-5%] w-40 h-40 object-cover rounded-full opacity-90" id="gamingPromoImage" src="" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <div class="flex justify-between items-end mb-8 gap-4">
+        <h2 class="text-2xl font-extrabold tracking-tight text-on-surface">Browse by Category</h2>
+        <a class="text-sm font-bold text-primary hover:underline underline-offset-4" href="/products">View All Categories</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4" id="categoryGrid"></div>
+    </section>
+
+    <section class="mt-20">
+      <div class="flex items-center gap-4 mb-10">
+        <h2 class="text-3xl font-black tracking-tighter text-on-surface">Hot Deals in Lebanon</h2>
+        <div class="h-[2px] flex-1 bg-surface-container"></div>
+      </div>
+      <div id="heroMessage" class="message hidden mb-6"></div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12" id="featuredGrid"></div>
+    </section>
+  </main>
+
+  <footer class="bg-[#f3f3f6] w-full mt-auto py-12 border-t border-[#c3c6d6]/15">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-6 max-w-7xl mx-auto">
+      <div class="col-span-2 md:col-span-1">
+        <span class="text-lg font-bold text-[#1a1c1e] brand-font block mb-4">Point Market LB</span>
+        <p class="text-xs font-medium text-[#434654] leading-relaxed max-w-xs">Precision electronics for the Lebanese market. Official warranties, current stock, and real cart flow.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm tracking-tight text-[#004288] mb-4">Customer Care</h4>
+        <ul class="text-xs font-medium space-y-3">
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/about">Exchange Policy</a></li>
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/about">LBP/USD Rate</a></li>
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/chat">Chat With Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm tracking-tight text-[#004288] mb-4">Quick Links</h4>
+        <ul class="text-xs font-medium space-y-3">
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/products">Shop</a></li>
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/checkout">Checkout</a></li>
+          <li><a class="text-[#434654] hover:text-[#004288] transition-all" href="/account">Account</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm tracking-tight text-[#004288] mb-4">Contact</h4>
+        <ul class="text-xs font-medium space-y-3 text-[#434654]">
+          <li>Beirut, Lebanon</li>
+          <li>+961 01 234 567</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
+
+
+

@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | PointMarketLB Lebanon Online Shopping Account</title>
-  <meta name="description" content="Sign in to PointMarketLB to continue shopping online and prepare your basket for checkout and delivery in Lebanon.">
+  <title>My Account | PointMarketLB Customer Profile</title>
+  <meta name="description" content="View your PointMarketLB customer details and shopping profile for smoother online ordering and delivery in Lebanon.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-background text-on-surface">
+<body>
+  <div class="shell" id="accountPage">
     <header class="site-header glass-nav">
       <div class="site-header__inner">
-        <a class="site-header__brand brand-font text-primary" href="/">Point Market LB</a>
+        <a class="site-header__brand brand-font" href="/">Point Market LB</a>
         <nav class="site-header__nav">
           <a class="site-header__link" data-nav="home" href="/">Home</a>
           <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
@@ -48,56 +49,35 @@
       </nav>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-    <section class="page-grid">
-      <aside class="surface">
-        <p class="eyebrow">Welcome back</p>
-        <h2 class="section-title">Sign in to continue shopping and return to your basket anytime.</h2>
-        <p>Keep your shopping flow simple, secure, and ready for checkout whenever you come back.</p>
-      </aside>
+    <section class="account-panel">
+      <div class="section-head">
+        <div><p class="eyebrow">Signed in</p><h2 class="section-title">Your shopping account</h2></div>
+        <span class="pill" id="accountRole"></span>
+      </div>
 
-      <div class="auth-panel">
-        <p class="eyebrow">Login</p>
-        <h2 class="section-title">Sign in</h2>
-        <div id="loginMessage" class="message hidden"></div>
-        <form id="loginForm" class="form-grid single">
-          <div class="form-group"><label class="form-label">Email</label><input name="email" type="email" required></div>
-          <div class="form-group">
-            <label class="form-label">Password</label>
-            <div class="password-field"><input name="password" type="password" required><button class="password-toggle" data-toggle-password type="button" aria-label="Show password"></button></div>
-          </div>
-          <button class="link-button" id="forgotPasswordToggle" type="button">Forgot password?</button>
-          <button class="button-alt" type="submit">Login</button>
-          <p style="margin: 6px 0 0; text-align: center; color: #52606d; font-size: 0.98rem;">
-            New here?
-            <a href="/register" style="color: #163252; font-weight: 700; text-decoration: none;">Create account / Sign up</a>
-          </p>
-        </form>
+      <div class="profile-grid">
+        <article class="card"><p class="eyebrow">Name</p><strong id="accountName"></strong></article>
+        <article class="card"><p class="eyebrow">Email</p><strong id="accountEmail"></strong></article>
+        <article class="card"><p class="eyebrow">Phone</p><strong id="accountPhone"></strong></article>
+        <article class="card"><p class="eyebrow">Birthday</p><strong id="accountBirthday"></strong></article>
+        <article class="card"><p class="eyebrow">Address</p><strong id="accountAddress"></strong></article>
+        <article class="card"><p class="eyebrow">Last login</p><strong id="accountLastLogin"></strong></article>
+      </div>
 
-        <div class="card hidden" id="resetPanel" style="margin-top: 18px;">
-          <p class="eyebrow">Password recovery</p>
-          <div id="resetMessage" class="message hidden"></div>
-          <div class="form-grid single">
-            <div class="form-group"><label class="form-label">Email</label><input id="resetEmail" type="email" placeholder="Your account email"></div>
-            <button class="button-soft" id="requestResetCodeButton" type="button">Send reset code</button>
-            <div class="form-group"><label class="form-label">6-digit code</label><input id="resetCode" type="text" maxlength="6"></div>
-            <div class="form-group">
-              <label class="form-label">New password</label>
-              <div class="password-field"><input id="resetPassword" type="password"><button class="password-toggle" data-toggle-password type="button" aria-label="Show password"></button></div>
-            </div>
-            <button class="button" id="resetPasswordButton" type="button">Reset password</button>
-            <p id="resetPreviewCode" style="margin: 0;"></p>
-          </div>
+      <div class="card" style="margin-top: 18px;">
+        <p class="eyebrow">Account status</p>
+        <h3 class="card-title" id="accountStatus"></h3>
+        <div class="actions-row" style="margin-top: 18px;">
+          <button class="button-alt" id="logoutButton" type="button">Log out</button>
         </div>
       </div>
     </section>
-    </main>
 
-    <footer class="store-footer surface max-w-7xl mx-auto px-4 sm:px-6">
+    <footer class="store-footer surface">
       <div class="store-footer-grid">
         <div>
           <h3>Point Market LB</h3>
-          <p>Sign in and continue shopping with a cleaner, faster basket experience.</p>
+          <p>Return to your basket, keep shopping, and stay ready for checkout and delivery.</p>
         </div>
         <div>
           <h4>Shop</h4>
@@ -112,6 +92,7 @@
         </div>
       </div>
     </footer>
+  </div>
   <script src="/app.js"></script>
 </body>
 </html>

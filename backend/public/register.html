@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | PointMarketLB Lebanon Online Shopping Account</title>
-  <meta name="description" content="Sign in to PointMarketLB to continue shopping online and prepare your basket for checkout and delivery in Lebanon.">
+  <title>Create Account | PointMarketLB Lebanon Online Shopping</title>
+  <meta name="description" content="Create your PointMarketLB account to shop online in Lebanon, save your information securely, and verify your email for a trusted delivery-ready shopping experience.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-background text-on-surface">
+<body>
+  <div class="shell">
     <header class="site-header glass-nav">
       <div class="site-header__inner">
-        <a class="site-header__brand brand-font text-primary" href="/">Point Market LB</a>
+        <a class="site-header__brand brand-font" href="/">Point Market LB</a>
         <nav class="site-header__nav">
           <a class="site-header__link" data-nav="home" href="/">Home</a>
           <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
@@ -48,70 +49,63 @@
       </nav>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
     <section class="page-grid">
-      <aside class="surface">
-        <p class="eyebrow">Welcome back</p>
-        <h2 class="section-title">Sign in to continue shopping and return to your basket anytime.</h2>
-        <p>Keep your shopping flow simple, secure, and ready for checkout whenever you come back.</p>
+      <aside class="hero-panel">
+        <p class="eyebrow" style="color: rgba(255,255,255,0.76);">Secure registration</p>
+        <h2 class="store-title">Create your account and verify your email for safer online shopping.</h2>
+        <p>Join PointMarketLB to save your details, shop more easily, and move toward smooth checkout and delivery across Lebanon.</p>
       </aside>
 
       <div class="auth-panel">
-        <p class="eyebrow">Login</p>
-        <h2 class="section-title">Sign in</h2>
-        <div id="loginMessage" class="message hidden"></div>
-        <form id="loginForm" class="form-grid single">
-          <div class="form-group"><label class="form-label">Email</label><input name="email" type="email" required></div>
+        <p class="eyebrow">Create your account</p>
+        <h2 class="section-title">Start shopping with PointMarketLB</h2>
+        <div id="registerMessage" class="message hidden"></div>
+        <form id="registerForm" class="form-grid">
           <div class="form-group">
+            <label class="form-label">Full name</label>
+            <input name="name" type="text" required>
+            <div class="field-hint">Example: Mohamed Rifaii</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input name="email" type="email" required>
+            <div class="field-hint">Example: mohamed@example.com</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone</label>
+            <input name="phone" type="tel">
+            <div class="field-hint">Example: +961 70 123 456</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Birthday</label>
+            <input name="birthday" type="date">
+            <div class="field-hint">Optional: choose your birth date</div>
+          </div>
+          <div class="form-group full">
+            <label class="form-label">Address</label>
+            <input name="address" type="text">
+            <div class="field-hint">Optional: area, street, building, floor</div>
+          </div>
+          <div class="form-group full">
             <label class="form-label">Password</label>
             <div class="password-field"><input name="password" type="password" required><button class="password-toggle" data-toggle-password type="button" aria-label="Show password"></button></div>
+            <div class="field-hint">Use 8+ characters with at least 1 uppercase letter, 1 lowercase letter, and 1 number. Example: Mohamed123</div>
           </div>
-          <button class="link-button" id="forgotPasswordToggle" type="button">Forgot password?</button>
-          <button class="button-alt" type="submit">Login</button>
-          <p style="margin: 6px 0 0; text-align: center; color: #52606d; font-size: 0.98rem;">
-            New here?
-            <a href="/register" style="color: #163252; font-weight: 700; text-decoration: none;">Create account / Sign up</a>
-          </p>
+          <div class="form-group full"><button class="button" id="requestCodeButton" type="button">Send email verification code</button></div>
         </form>
 
-        <div class="card hidden" id="resetPanel" style="margin-top: 18px;">
-          <p class="eyebrow">Password recovery</p>
-          <div id="resetMessage" class="message hidden"></div>
-          <div class="form-grid single">
-            <div class="form-group"><label class="form-label">Email</label><input id="resetEmail" type="email" placeholder="Your account email"></div>
-            <button class="button-soft" id="requestResetCodeButton" type="button">Send reset code</button>
-            <div class="form-group"><label class="form-label">6-digit code</label><input id="resetCode" type="text" maxlength="6"></div>
-            <div class="form-group">
-              <label class="form-label">New password</label>
-              <div class="password-field"><input id="resetPassword" type="password"><button class="password-toggle" data-toggle-password type="button" aria-label="Show password"></button></div>
-            </div>
-            <button class="button" id="resetPasswordButton" type="button">Reset password</button>
-            <p id="resetPreviewCode" style="margin: 0;"></p>
+        <div class="auth-panel hidden" id="verifyPanel" style="margin-top: 18px; background: rgba(29,84,72,0.05);">
+          <p class="eyebrow">Verify email</p>
+          <div class="verify-inline">
+            <input id="verifyEmail" type="email" readonly>
+            <input id="verificationCode" type="text" maxlength="6" placeholder="6-digit code">
+            <button class="button-alt" id="completeSignupButton" type="button">Complete account setup</button>
           </div>
+          <p id="previewCode" style="margin-bottom: 0;"></p>
         </div>
       </div>
     </section>
-    </main>
-
-    <footer class="store-footer surface max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="store-footer-grid">
-        <div>
-          <h3>Point Market LB</h3>
-          <p>Sign in and continue shopping with a cleaner, faster basket experience.</p>
-        </div>
-        <div>
-          <h4>Shop</h4>
-          <a href="/products">All Products</a>
-          <a href="/cart">Basket</a>
-          <a href="/about">About Us</a>
-        </div>
-        <div>
-          <h4>Support</h4>
-          <a href="/about">Delivery Info</a>
-          <a href="/contact">Contact</a>
-        </div>
-      </div>
-    </footer>
+  </div>
   <script src="/app.js"></script>
 </body>
 </html>

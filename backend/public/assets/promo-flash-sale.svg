@@ -1,0 +1,24 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="520" rx="36" fill="url(#bg)"/>
+  <circle cx="1260" cy="114" r="170" fill="#FFFFFF" opacity="0.1"/>
+  <circle cx="1460" cy="370" r="140" fill="#A6CBF3" opacity="0.3"/>
+  <rect x="74" y="78" width="182" height="52" rx="26" fill="#F4F9FF"/>
+  <text x="112" y="112" fill="#2E5B86" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">FLASH SALE</text>
+  <text x="74" y="198" fill="#FDFEFF" font-family="Segoe UI, Arial, sans-serif" font-size="70" font-weight="800">Limited-Time Offers</text>
+  <text x="74" y="278" fill="#EAF3FD" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Grab this week's best prices before the deals disappear.</text>
+  <rect x="74" y="334" width="288" height="64" rx="20" fill="#FFFFFF"/>
+  <text x="114" y="377" fill="#274D73" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Save more today</text>
+  <g>
+    <rect x="1114" y="82" width="276" height="356" rx="42" fill="#FFFFFF" opacity="0.16"/>
+    <circle cx="1252" cy="218" r="96" fill="#FFFFFF"/>
+    <text x="1198" y="222" fill="#2B5F97" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">-30%</text>
+    <rect x="1166" y="292" width="172" height="54" rx="16" fill="#DCEBFA"/>
+    <text x="1208" y="327" fill="#315A86" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Weekly deal</text>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="34" y1="34" x2="1542" y2="508" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6FA8E0"/>
+      <stop offset="1" stop-color="#213A55"/>
+    </linearGradient>
+  </defs>
+</svg>

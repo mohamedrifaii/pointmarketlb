@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Laptops | Point Market LB</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#055cb9",
+            "secondary": "#00687a",
+            "surface-container-lowest": "#ffffff",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f3f3f6",
+            "on-secondary-container": "#006374",
+            "on-tertiary": "#ffffff",
+            "primary": "#004288",
+            "error-container": "#ffdad6",
+            "primary-container": "#0059b3",
+            "on-secondary-fixed": "#001f26",
+            "primary-fixed-dim": "#aac7ff",
+            "surface-bright": "#f9f9fc",
+            "inverse-primary": "#aac7ff",
+            "secondary-fixed": "#adecff",
+            "inverse-surface": "#2f3133",
+            "on-surface": "#1a1c1e",
+            "on-secondary": "#ffffff",
+            "outline-variant": "#c3c6d6",
+            "tertiary-fixed": "#ffdbcc",
+            "tertiary": "#752d00",
+            "surface-container": "#eeeef0",
+            "secondary-container": "#6ae1ff",
+            "tertiary-container": "#9b3e00",
+            "surface-container-highest": "#e2e2e5",
+            "on-surface-variant": "#434654",
+            "surface-variant": "#e2e2e5",
+            "background": "#f9f9fc",
+            "outline": "#737685",
+            "surface": "#f9f9fc",
+            "surface-container-high": "#e8e8ea",
+            "on-background": "#1a1c1e"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          }
+        }
+      }
+    };
+  </script>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+  <header class="site-header bg-[#f9f9fc] docked full-width top-0 z-50 sticky glass-nav">
+    <div class="site-header__inner w-full px-6 py-4 max-w-7xl mx-auto">
+      <a class="site-header__brand text-2xl font-black tracking-tighter text-[#004288] brand-font" href="index.html">Point Market LB</a>
+      <nav class="site-header__nav">
+        <a class="site-header__link" href="index.html">Home</a>
+        <a class="site-header__link" href="mobiles.html">Mobiles</a>
+        <a class="site-header__link site-header__link--active" href="laptops.html">Laptops</a>
+        <a class="site-header__link" href="audio.html">Audio</a>
+        <a class="site-header__link" href="gaming.html">Gaming</a>
+        <a class="site-header__link" href="deals.html">Deals</a>
+      </nav>
+      <div class="site-header__actions">
+        <label class="site-header__search">
+          <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+          <input placeholder="Search laptops..." type="text"/>
+        </label>
+        <a class="site-header__icon" href="index.html" aria-label="Account">
+          <span class="material-symbols-outlined">person</span>
+        </a>
+        <a class="site-header__icon" href="checkout.html" aria-label="Go to checkout">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span class="site-header__badge">2</span>
+        </a>
+      </div>
+    </div>
+    <nav class="site-header__mobile-nav max-w-7xl mx-auto px-6 pb-4">
+      <a class="site-header__link" href="index.html">Home</a>
+      <a class="site-header__link" href="mobiles.html">Mobiles</a>
+      <a class="site-header__link site-header__link--active" href="laptops.html">Laptops</a>
+      <a class="site-header__link" href="audio.html">Audio</a>
+      <a class="site-header__link" href="gaming.html">Gaming</a>
+      <a class="site-header__link" href="deals.html">Deals</a>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto w-full px-6 py-16 flex-1">
+    <section class="grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-xs font-black uppercase tracking-[0.3em] text-primary mb-4">Prototype Category</p>
+        <h1 class="text-5xl font-black tracking-tight mb-4">Laptop Collection</h1>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+          This screen was not included in the Stitch export, so this page acts as a connected placeholder inside the prototype.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a class="px-6 py-3 bg-gradient-to-br from-primary to-primary-container text-white font-bold rounded-lg" href="mobiles.html">Browse Available Catalog</a>
+          <a class="px-6 py-3 bg-surface-container-lowest border border-outline-variant/20 text-primary font-bold rounded-lg" href="index.html">Back to Home</a>
+        </div>
+      </div>
+      <div class="bg-surface-container-low rounded-2xl p-8">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl p-6">
+            <span class="material-symbols-outlined text-primary text-3xl">laptop_mac</span>
+            <h2 class="text-xl font-extrabold mt-4 mb-2">Premium Ultrabooks</h2>
+            <p class="text-sm text-on-surface-variant">Thin, fast devices for work and travel.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6">
+            <span class="material-symbols-outlined text-primary text-3xl">memory</span>
+            <h2 class="text-xl font-extrabold mt-4 mb-2">Creator Power</h2>
+            <p class="text-sm text-on-surface-variant">High-performance machines for editing and rendering.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6">
+            <span class="material-symbols-outlined text-primary text-3xl">battery_charging_full</span>
+            <h2 class="text-xl font-extrabold mt-4 mb-2">All-Day Battery</h2>
+            <p class="text-sm text-on-surface-variant">Balanced options for everyday business use.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6">
+            <span class="material-symbols-outlined text-primary text-3xl">local_shipping</span>
+            <h2 class="text-xl font-extrabold mt-4 mb-2">Prototype Flow</h2>
+            <p class="text-sm text-on-surface-variant">Shared navigation keeps every main menu item working.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#f3f3f6] w-full py-10 border-t border-[#c3c6d6]/15">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4 text-sm text-on-surface-variant">
+      <span>&copy; 2024 Point Market LB. Precision Electronics Lebanon.</span>
+      <div class="flex gap-4">
+        <a href="index.html">Home</a>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="checkout.html">Checkout</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

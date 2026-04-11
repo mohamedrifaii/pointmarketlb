@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | PointMarketLB Store Management</title>
+  <meta name="description" content="Manage products, prices, stock and user access from the PointMarketLB admin dashboard for your Lebanese online shopping website.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-background text-on-surface admin-surface" id="adminPage">
+  <header class="site-header glass-nav">
+      <div class="site-header__inner">
+        <a class="site-header__brand brand-font text-primary" href="/">Point Market LB</a>
+        <nav class="site-header__nav">
+          <a class="site-header__link" data-nav="home" href="/">Home</a>
+          <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+          <a class="site-header__link" data-nav="mobiles" href="/mobiles">Mobiles</a>
+          <a class="site-header__link" data-nav="tvs" href="/tvs">TVs</a>
+          <a class="site-header__link" data-nav="audio" href="/audio">Audio</a>
+          <a class="site-header__link" data-nav="gaming" href="/gaming">Gaming</a>
+          <a class="site-header__link" data-nav="wiring" href="/wiring">Wiring</a>
+          <a class="site-header__link" data-nav="electronics" href="/electronics">Electronics</a>
+          <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+        <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+        </nav>
+        <div class="site-header__actions">
+          <form class="site-header__search" data-store-search>
+            <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+            <input type="text" name="search" placeholder="Search tech...">
+          </form>
+          <a aria-label="Login" class="site-header__icon" href="/login" data-auth-link="guest"><span class="material-symbols-outlined">person</span></a>
+          <a aria-label="Account" class="site-header__icon hidden" href="/account" data-auth-link="member"><span class="material-symbols-outlined">person</span></a>
+          <a aria-label="Go to checkout" class="site-header__icon" href="/checkout"><span class="material-symbols-outlined">shopping_cart</span><span class="site-header__badge" data-cart-count>0</span></a>
+          <a aria-label="Admin" class="site-header__icon hidden" href="/admin" data-admin-link="true"><span class="material-symbols-outlined">shield_person</span></a>
+        </div>
+      </div>
+      <nav class="site-header__mobile-nav">
+        <a class="site-header__link" data-nav="home" href="/">Home</a>
+        <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+        <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+        <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+        <a class="site-header__link" data-nav="checkout" href="/checkout">Checkout</a>
+      </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    <section class="admin-panel">
+      <div class="section-head">
+        <div><p class="eyebrow">Dashboard</p><h2 class="section-title">Manage products, pricing, stock, and customer access</h2></div>
+      </div>
+      <nav class="admin-tabs" aria-label="Admin sections">
+        <a class="admin-tab admin-tab--active" href="/admin">Products</a>
+        <a class="admin-tab" href="/admin/users">Users</a>
+      </nav>
+      <div id="adminMessage" class="message hidden"></div>
+      <div class="admin-stats" id="adminStats"></div>
+
+      <div class="admin-grid" style="margin-top: 22px; grid-template-columns: 1fr;">
+        <section class="card">
+          <div class="section-head compact">
+            <div><p class="eyebrow">Products</p><h3 class="card-title">Manage catalog, prices, and inventory</h3></div>
+          </div>
+
+          <form id="productForm" class="form-grid">
+            <input id="productId" type="hidden">
+            <div class="form-group">
+              <label class="form-label">Product name</label>
+              <input id="productNameInput" type="text" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Slug</label>
+              <input id="productSlugInput" type="text" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select id="productCategoryInput" required>
+                <option value="">Select category</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Image URL</label>
+              <input id="productImageInput" type="text" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Price</label>
+              <input id="productPriceInput" type="number" min="0" step="0.01" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Compare price</label>
+              <input id="productComparePriceInput" type="number" min="0" step="0.01">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Stock</label>
+              <input id="productStockInput" type="number" min="0" step="1" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Featured</label>
+              <select id="productFeaturedInput">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Summary</label>
+              <input id="productSummaryInput" type="text" required>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Description</label>
+              <textarea id="productDescriptionInput" rows="4" required></textarea>
+            </div>
+            <div class="actions-row full">
+              <button class="button-alt" id="saveProductButton" type="submit">Save product</button>
+              <button class="button-soft" id="resetProductButton" type="button">Clear form</button>
+            </div>
+          </form>
+
+          <section class="card admin-category-manager">
+            <div class="section-head compact">
+              <div><p class="eyebrow">Categories</p><h3 class="card-title">Manage fixed category list</h3></div>
+            </div>
+            <form class="admin-category-form" id="categoryForm">
+              <input id="categoryNameInput" type="text" placeholder="Add new category (e.g. Appliances)" required>
+              <button class="button" type="submit">Add Category</button>
+            </form>
+            <div class="admin-category-grid" id="adminCategories"></div>
+          </section>
+
+          <div class="table-shell" style="margin-top: 18px;">
+            <table>
+              <thead>
+                <tr><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="adminProducts"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
+
+
+

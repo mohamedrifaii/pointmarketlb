@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Users | PointMarketLB</title>
+  <meta name="description" content="Manage user accounts, statuses, and access controls in PointMarketLB.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-background text-on-surface admin-surface" id="adminUsersPage">
+  <header class="site-header glass-nav">
+    <div class="site-header__inner">
+      <a class="site-header__brand brand-font text-primary" href="/">Point Market LB</a>
+      <nav class="site-header__nav">
+        <a class="site-header__link" data-nav="home" href="/">Home</a>
+        <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+        <a class="site-header__link" data-nav="mobiles" href="/mobiles">Mobiles</a>
+        <a class="site-header__link" data-nav="tvs" href="/tvs">TVs</a>
+        <a class="site-header__link" data-nav="audio" href="/audio">Audio</a>
+        <a class="site-header__link" data-nav="gaming" href="/gaming">Gaming</a>
+        <a class="site-header__link" data-nav="wiring" href="/wiring">Wiring</a>
+        <a class="site-header__link" data-nav="electronics" href="/electronics">Electronics</a>
+        <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+        <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+      </nav>
+      <div class="site-header__actions">
+        <form class="site-header__search" data-store-search>
+          <span class="material-symbols-outlined text-on-surface-variant text-lg">search</span>
+          <input type="text" name="search" placeholder="Search tech...">
+        </form>
+        <a aria-label="Login" class="site-header__icon" href="/login" data-auth-link="guest"><span class="material-symbols-outlined">person</span></a>
+        <a aria-label="Account" class="site-header__icon hidden" href="/account" data-auth-link="member"><span class="material-symbols-outlined">person</span></a>
+        <a aria-label="Go to checkout" class="site-header__icon" href="/checkout"><span class="material-symbols-outlined">shopping_cart</span><span class="site-header__badge" data-cart-count>0</span></a>
+        <a aria-label="Admin" class="site-header__icon hidden" href="/admin" data-admin-link="true"><span class="material-symbols-outlined">shield_person</span></a>
+      </div>
+    </div>
+    <nav class="site-header__mobile-nav">
+      <a class="site-header__link" data-nav="home" href="/">Home</a>
+      <a class="site-header__link" data-nav="shop" href="/products">Shop</a>
+      <a class="site-header__link" data-nav="deals" href="/deals">Deals</a>
+        <a class="site-header__link" data-nav="chat" href="/chat">Chat</a>
+        <a class="site-header__link" data-nav="contact" href="/contact">Contact</a>
+      <a class="site-header__link" data-nav="checkout" href="/checkout">Checkout</a>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    <section class="admin-panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Admin</p>
+          <h2 class="section-title">User Management</h2>
+        </div>
+      </div>
+      <nav class="admin-tabs" aria-label="Admin sections">
+        <a class="admin-tab" href="/admin">Products</a>
+        <a class="admin-tab admin-tab--active" href="/admin/users">Users</a>
+      </nav>
+      <div id="adminMessage" class="message hidden"></div>
+      <div class="admin-stats" id="adminStats"></div>
+
+      <section class="card" style="margin-top: 22px;">
+        <div class="section-head compact">
+          <div><p class="eyebrow">Users</p><h3 class="card-title">Manage account access and status</h3></div>
+        </div>
+        <div class="toolbar admin-toolbar">
+          <input id="adminSearch" type="text" placeholder="Search users by name, email, or phone">
+          <select id="adminStatus">
+            <option value="">All statuses</option>
+            <option value="active">Active</option>
+            <option value="blocked">Blocked</option>
+            <option value="inactive">Inactive</option>
+          </select>
+        </div>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr><th>User</th><th>Role</th><th>Status</th><th>Last login</th><th>Actions</th></tr>
+            </thead>
+            <tbody id="adminUsers"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card hidden" id="adminPasswordPanel" style="margin-top: 16px;">
+        <div class="section-head compact">
+          <div><p class="eyebrow">Security</p><h3 class="card-title">Set User Password</h3></div>
+        </div>
+        <p id="adminPasswordTargetLabel" class="muted-copy">Selected user: -</p>
+        <form class="toolbar admin-toolbar" id="adminPasswordForm">
+          <input id="adminPasswordUserId" type="hidden">
+          <input id="adminPasswordInput" type="password" placeholder="New password (8+ chars, upper/lower/number)" required>
+          <button class="button" type="submit">Update Password</button>
+          <button class="button-soft" id="adminPasswordCancel" type="button">Cancel</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
+
+
+

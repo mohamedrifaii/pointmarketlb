@@ -1,0 +1,31 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="url(#bg)"/>
+  <rect x="88" y="84" width="240" height="54" rx="27" fill="#D9F6FF"/>
+  <text x="126" y="118" fill="#0B4D96" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">GAMING PULSE</text>
+
+  <text x="88" y="234" fill="#0E2335" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800">PS5 Slim</text>
+  <text x="88" y="324" fill="#0E2335" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="800">Console</text>
+
+  <text x="90" y="420" fill="#355370" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Smooth performance, ultra-fast loading, and</text>
+  <text x="90" y="466" fill="#355370" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">next-gen gaming in a compact design.</text>
+
+  <rect x="88" y="628" width="248" height="72" rx="36" fill="#0D2534"/>
+  <text x="145" y="674" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">Check Stock</text>
+
+  <rect x="890" y="198" width="196" height="320" rx="28" fill="#111F2D"/>
+  <path d="M924 464C906 464 896 450 882 450C868 450 858 464 840 464C823 464 810 452 811 432C812 413 826 400 844 400C857 400 867 408 881 408C895 408 905 400 918 400C936 400 950 413 951 432C952 452 939 464 924 464Z" fill="#EAF2FF"/>
+  <circle cx="860" cy="432" r="10" fill="#2E65A3"/>
+  <rect x="853" y="427" width="14" height="3.5" rx="1.75" fill="#0E2036"/>
+  <rect x="858" y="422" width="3.5" height="14" rx="1.75" fill="#0E2036"/>
+  <circle cx="904" cy="426" r="4" fill="#2E65A3"/>
+  <circle cx="917" cy="438" r="4" fill="#2E65A3"/>
+  <circle cx="917" cy="414" r="4" fill="#2E65A3"/>
+  <circle cx="930" cy="426" r="4" fill="#2E65A3"/>
+
+  <defs>
+    <linearGradient id="bg" x1="26" y1="34" x2="1242" y2="726" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F8FF"/>
+      <stop offset="1" stop-color="#BEEBF9"/>
+    </linearGradient>
+  </defs>
+</svg>
